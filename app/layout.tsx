@@ -33,11 +33,10 @@ export default function RootLayout({
       className={`${robotoConfig.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body>
-        <div className="">
-          <div className="h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+      <body className="">
+        <div className="bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
           <SectionContainer>
-            <div className="flex flex-col justify-between font-sans">
+            <div className="flex flex-col justify-between min-h-screen">
               <Header />
               <main className="mb-auto">{children}</main>
               <Footer />

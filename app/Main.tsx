@@ -4,8 +4,8 @@ import Link from "@/components/Link";
 export default function Home() {
   return (
     <>
-      <div className="flex space-y-2 pb-8 pt-6 md:space-y-5">
-        <div className="flex-1 align-middle">
+      <div className="flex flex-col lg:flex-row items-center w-full">
+        <div className="flex-1">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Welcome to Data Science UCSB!
           </h1>
@@ -14,12 +14,12 @@ export default function Home() {
             successful careers in data science and analytics.
           </p>
         </div>
-        <div className="flex-1 align-middle">
+        <div className="w-full lg:w-1/2 flex items-center justify-center mt-4 lg:mt-0">
           <Image
-            src="/images/homepage.png"
+            src="/images/homepg.png"
             alt="Homepage Image"
-            width={400}
-            height={200}
+            width={300}
+            height={300}
           />
         </div>
       </div>
