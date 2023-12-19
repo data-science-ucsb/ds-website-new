@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
+import siteMetadata from "@/data/siteMetadata";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
+import SectionContainer from "@/components/SectionContainer";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoConfig = Roboto({
+  weight: "400",
+  style: "normal",
+  display: "swap",
+  variable: "--font-space-roboto",
+  preload: true,
+  fallback: ["sans-serif"],
+  adjustFontFallback: true,
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "UCSB Data Science Club",
@@ -15,8 +28,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang={siteMetadata.language}
+      className={`${robotoConfig.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body>
+        <div className="">
+          <div className="h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+          <SectionContainer>
+            <div className="flex flex-col justify-between font-sans">
+              <Header />
+              <main className="mb-auto">{children}</main>
+              <Footer />
+            </div>
+          </SectionContainer>
+        </div>
+      </body>
     </html>
   );
 }

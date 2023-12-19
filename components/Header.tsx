@@ -2,6 +2,7 @@ import siteMetadata from "@/data/siteMetadata";
 import headerNavLinks from "@/data/headerNavLinks";
 import Link from "./Link";
 import Image from "next/image";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -39,6 +40,7 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
+        <MobileNav />
       </div>
     </header>
   );
