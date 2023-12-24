@@ -1,36 +1,21 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import siteMetadata from "@/data/siteMetadata";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import SectionContainer from "@/components/SectionContainer";
-
-const robotoConfig = Roboto({
-  weight: "400",
-  style: "normal",
-  display: "swap",
-  variable: "--font-space-roboto",
-  preload: true,
-  fallback: ["sans-serif"],
-  adjustFontFallback: true,
-  subsets: ["latin"],
-});
+import { inter } from "./fonts";
 
 export const metadata: Metadata = {
   title: "UCSB Data Science Club",
   description: "Data Science Club at UCSB",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang={siteMetadata.language}
-      className={`${robotoConfig.variable} scroll-smooth`}
+      className={inter.className}
       suppressHydrationWarning
     >
       <body className="">

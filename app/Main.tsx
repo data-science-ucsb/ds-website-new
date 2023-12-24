@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "@/components/Link";
+import HomepageEventsSection from "@/components/HomepageEventsSection";
+import events from "@/data/homepage-events";
 
 export default function Home() {
   return (
@@ -28,13 +29,23 @@ export default function Home() {
         <h1 className="text-2xl md:text-2xl lg:text-3xl font-extrabold leading-9 tracking-tight text-gray-900">
           Our Mission
         </h1>
-        <p className="text-base md:text-lg lg:text-xl leading-7 text-gray-500 max-w-3xl mx-auto">
+        <p className="font-lato text-base md:text-lg lg:text-xl leading-7 text-gray-500 max-w-2xl mx-auto">
           We provide Gauchos with the resources and community to learn, share,
           and create in the realm of data science. Our vision is to be the
           platform through which companies and faculty researchers seek the best
           data science talent UCSB has to offer, as well as one that empowers
           students looking to earn this distinction.
         </p>
+      </div>
+      <div className="container mx-auto my-8">
+        {events.map((event, index) => (
+          <HomepageEventsSection
+            key={index}
+            title={event.title}
+            description={event.description}
+            imageUrl={event.imageUrl}
+          />
+        ))}
       </div>
     </>
   );
