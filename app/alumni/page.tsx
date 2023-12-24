@@ -1,4 +1,4 @@
-import AlumniCard from "@/components/AlumniCard";
+import AlumniCard from "@/components/AlumniProfileCard";
 import alumniData from "@/data/alumni";
 
 const Alumni = () => {
