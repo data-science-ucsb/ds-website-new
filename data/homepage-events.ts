@@ -22,12 +22,6 @@ const homepageEvents = [
       "Join us for our weekly workshops on a variety of topics, including Python, R, machine learning, and more!",
     imageUrl: "/images/home3.png",
   },
-  {
-    title: "Resources",
-    description:
-      "Check out our resources page for more information on Data Science at UCSB!",
-    imageUrl: "/images/blog19kickoff.png",
-  },
 ];
 
 export default homepageEvents;
