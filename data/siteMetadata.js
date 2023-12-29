@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: "UCSB Data Science Club Website",
+  title: "UCSB Data Science Club",
   author: "UCSB Data Science Club",
-  headerTitle: "UCSB DS Club Website",
+  headerTitle: "Data Science UCSB",
   description: "UCSB DS Club Website created with Next.js and Tailwind.css",
   language: "en-us",
   theme: "system",

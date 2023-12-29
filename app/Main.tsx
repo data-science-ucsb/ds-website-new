@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HomepageEventsSection from "@/components/HomepageEventsSection";
+import SponsorsSection from "@/components/SponsorsSection";
 import events from "@/data/homepage-events";
 
 export default function Home() {
@@ -11,8 +12,8 @@ export default function Home() {
             Welcome to Data Science UCSB!
           </h1>
           <p className="text-lg leading-7 text-gray-500 mt-2">
-            Data Science UCSB is a student organization preparing Gauchos for
-            successful careers in data science and analytics.
+            We prepare students for successful careers in data science +
+            analytics
           </p>
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center mt-4 lg:mt-0">
@@ -47,6 +48,7 @@ export default function Home() {
           />
         ))}
       </div>
+      <SponsorsSection />
     </>
   );
 }
