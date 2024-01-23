@@ -4,6 +4,7 @@ import {
   executiveTeam,
   marketingAndOperationsTeam,
   projectPipelineDirectors,
+  interns
 } from "@/data/board";
 
 const AboutPage = () => {
@@ -62,6 +63,23 @@ const AboutPage = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projectPipelineDirectors.map((member, index) => (
+            <BoardProfileCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              bio={member.bio}
+              imageUrl={member.imageUrl}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-3xl font-bold text-center mb-16 mt-16">
+          Interns
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {interns.map((member, index) => (
             <BoardProfileCard
               key={index}
               name={member.name}

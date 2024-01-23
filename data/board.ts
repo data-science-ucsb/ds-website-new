@@ -86,10 +86,38 @@ export const projectPipelineDirectors: BoardMember[] = [
   },
 ];
 
+export const interns: BoardMember[] = [ 
+  {
+    name: "Sterling Hsu",
+    role: "Events Intern",
+    bio: "I’m a first-year CS major who loves learning about how we can use software to help optimize our lives, in every form from personal assistants to government-level data analysis programs. That mission’s led me to the very fun field of machine learning, where I hope to do some great research work. I’m also super interested in the history of computers, the best ways to use them, and being a real nerd about both!",
+    imageUrl: "/images/board/sterling-hsu.png" // work in progress
+  },
+  {
+    name: "Aliza Samad",
+    role: "Outreach Intern",
+    bio: "I’m a first year Stats & DS major interested in learning more about the intersection of data analytics and business administration! I hope that my interest in business analytics as well as the experience I will gain as outreach intern will help prepare me for a future career in business I don’t have much programming experience, but I am excited to develop some of those skills this year with the club through the various projects that will be offered in the coming quarters.",
+    imageUrl: "/images/board/aliza-samad.png" // work in progress
+  },
+  {
+    name: "Lance Sanchez",
+    role: "Coding Intern",
+    bio: "I am a 1st-year Statistics and Data Science major interested specifically in big data in healthcare. I am excited to learn something new every day about data science during my time here at UCSB and the Data Science Club. I also enjoy data visualization and writing about data, leading me to become interested in data journalism. I hope to become more knowledgeable in my field and hopefully, one day be able to teach others about the fascinating world of data science in near the future! I listen to many genres of music, but my favorite song to chill to is probably From the Start by Laufey!",
+    imageUrl: "/images/board/lance-sanchez.png" // work in progress
+  },
+  {
+    name: "Clement Boiteux",
+    role: "Web Development Intern",
+    bio: "Hi, I’m Clement and I’m a first-year Computer Engineering major from San Jose who's passionate about using technology to solve problems and simplify our lives. My 3 most favorite programming languages are Java, Python, and C++. I’m interested in discovering the intersection of AI and system software to build smarter computers. I'm also very excited to learn web dev technologies to improve the website so users have a better experience! My most favorite foods are ramen, boba, and ice cream. In my free time, I like watching movies, playing 8-ball, and biking.",
+    imageUrl: "/images/board/clement-boiteux.png" // work in progress
+  },
+];
+
 export const boardMembers = [
   ...executiveTeam,
   ...marketingAndOperationsTeam,
   ...projectPipelineDirectors,
+  ...interns
 ];
 
 export default boardMembers;
