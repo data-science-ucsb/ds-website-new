@@ -3,7 +3,7 @@ import Image from "next/image";
 import {
   executiveTeam,
   marketingAndOperationsTeam,
-  projectPipelineDirectors,
+  techDevTeam,
   interns
 } from "@/data/board";
 
@@ -27,7 +27,7 @@ const AboutPage = () => {
         <h2 className="text-3xl font-bold text-center mb-16 mt-16">
           Executive Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {executiveTeam.map((member, index) => (
             <BoardProfileCard
               key={index}
@@ -44,7 +44,7 @@ const AboutPage = () => {
         <h2 className="text-3xl font-bold text-center mb-16 mt-16">
           Marketing and Operations Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {marketingAndOperationsTeam.map((member, index) => (
             <BoardProfileCard
               key={index}
@@ -59,10 +59,10 @@ const AboutPage = () => {
 
       <section>
         <h2 className="text-3xl font-bold text-center mb-16 mt-16">
-          Project Pipeline Directors
+          Technical Development Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projectPipelineDirectors.map((member, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {techDevTeam.map((member, index) => (
             <BoardProfileCard
               key={index}
               name={member.name}
@@ -78,7 +78,7 @@ const AboutPage = () => {
         <h2 className="text-3xl font-bold text-center mb-16 mt-16">
           Interns
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {interns.map((member, index) => (
             <BoardProfileCard
               key={index}

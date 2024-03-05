@@ -13,7 +13,7 @@ const Header = () => {
             <div className="">
               <Image
                 src={"/logo.png"}
-                alt="Data Science Logo"
+                alt="Data Science Logo" 
                 width={100}
                 height={100}
               ></Image>
