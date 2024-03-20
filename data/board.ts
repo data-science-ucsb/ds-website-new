@@ -13,15 +13,9 @@ export const executiveTeam: BoardMember[] = [
     imageUrl: "/images/board/krish-agarwal.jpg",
   },
   {
-    name: "Mateo Wang",
-    role: "Co-president",
-    bio: "Hi! I’m a fourth-year CS major at UCSB from San Jose. I have a deep passion for all things data science and web development. The way I approach learning and solving problems is diving headfirst: understand the landscape of what you’re trying to learn or create and just do it, learning as you go. When I’m not working on side projects or cramming homework last minute, you can find me improvising on the dorm lounge pianos or running on the beautiful SB beaches!",
-    imageUrl: "/images/board/mateo-wang.jpg",
-  },
-  {
     name: "Samantha Su",
-    role: "Vice president",
-    bio: "Hi, I’m Sam, and I’m thrilled to serve as the VP for the upcoming year! Data Science UCSB has been a transformative experience in my college career, igniting my passion for giving back to our community through human-centric approaches that drive valuable impact. I’m excited to meet all the members and collaborate on awesome data-related projects! Feel free to reach out on Discord or Instagram if you’d like to chat!",
+    role: "Co-president",
+    bio: "Hi, I’m Sam, and I’m thrilled to serve as the Co-President for the upcoming year! Data Science UCSB has been a transformative experience in my college career, igniting my passion for giving back to our community through human-centric approaches that drive valuable impact. I’m excited to meet all the members and collaborate on awesome data-related projects! Feel free to reach out on Discord or Instagram if you’d like to chat!",
     imageUrl: "/images/board/samantha-su.jpg",
   },
 ];
@@ -65,22 +59,28 @@ export const marketingAndOperationsTeam: BoardMember[] = [
   },
 ];
 
-export const projectPipelineDirectors: BoardMember[] = [
+export const techDevTeam: BoardMember[] = [
+  {
+    name: "Mateo Wang",
+    role: "Project Group Director",
+    bio: "Hi! I’m a fourth-year CS major at UCSB from San Jose. I have a deep passion for all things data science and web development. The way I approach learning and solving problems is diving headfirst: understand the landscape of what you’re trying to learn or create and just do it, learning as you go. When I’m not working on side projects or cramming homework last minute, you can find me improvising on the dorm lounge pianos or running on the beautiful SB beaches!",
+    imageUrl: "/images/board/mateo-wang.jpg",
+  },
   {
     name: "Tanay Biradar",
-    role: "Project Group",
+    role: "Director of Technical Development",
     bio: "I’m a 2nd year CS major who loves building cool things with computers! I’ve spent years writing + deploying full-stack web apps and training ML models to fly planes. My interest in data privacy has led me to build and maintain servers for a homelab. I also love teaching and getting others as excited about CS as I do!",
     imageUrl: "/images/board/tanay-biradar.jpg",
   },
   {
     name: "Mitali Gaidhani",
-    role: "Intermediate Pipeline Director",
+    role: "Director of Technical Development",
     bio: "I’m a second year Computing (CCS) major from the Bay Area. I’m interested in interdisciplinary applications of data science. More specifically, leveraging machine learning to make valuable and innovative contributions to other disciplines. In my free time, I enjoy baking, painting, and any other creative activities. I’m excited to meet the UCSB Data Science community this year!",
     imageUrl: "/images/board/mitali-gaidhani.jpg",
   },
   {
     name: "Daniel Naylor",
-    role: "Beginner Pipeline Director",
+    role: "Director of Technical Development",
     bio: "I’m a CCS student interested in mathematics. My focus is largely applied math, especially in fields such as statistics, machine learning, and computer science. I have a passion for both learning and teaching, having worked extensively as a tutor, and I plan on applying these skills in applied math research throughout the coming school years.",
     imageUrl: "/images/board/daniel-naylor.jpg",
   },
@@ -116,7 +116,7 @@ export const interns: BoardMember[] = [
 export const boardMembers = [
   ...executiveTeam,
   ...marketingAndOperationsTeam,
-  ...projectPipelineDirectors,
+  ...techDevTeam,
   ...interns
 ];
 

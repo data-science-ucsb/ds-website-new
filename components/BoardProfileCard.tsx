@@ -20,8 +20,9 @@ export const BoardProfileCard = ({
           src={imageUrl}
           alt={name}
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover"}}
           className="rounded-full"
+          
         />
       </div>
       <h3 className="text-lg font-semibold mt-4">{name}</h3>
