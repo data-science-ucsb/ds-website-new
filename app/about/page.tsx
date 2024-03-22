@@ -13,16 +13,6 @@ const AboutPage = () => {
       <h1 className="text-4xl font-bold text-center mb-12">
         Data Science UCSB Officers
       </h1>
-      <div className="flex justify-center">
-        <Image
-          src="/images/officers.png"
-          alt="Data Science UCSB Officers"
-          width={1000}
-          height={500}
-          style={{ objectFit: "cover" }}
-          className="rounded-md"
-        />
-      </div>
       <section>
         <h2 className="text-3xl font-bold text-center mb-16 mt-16">
           Executive Team

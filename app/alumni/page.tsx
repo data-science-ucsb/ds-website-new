@@ -1,5 +1,6 @@
 import AlumniCard from "@/components/AlumniProfileCard";
 import alumniData from "@/data/alumni";
+import Image from "next/image";
 
 const Alumni = () => {
   return (
@@ -17,6 +18,19 @@ const Alumni = () => {
             imageUrl={alumni.imageUrl}
           />
         ))}
+      </div>
+      <br/> <br/>
+      <h1 className="justify-center text-4xl font-bold text-center mb-12">Alumni Officer Photo 21-22</h1>
+      <div className="flex justify-center">
+        <br/>
+        <Image
+          src="/images/officers.png"
+          alt="Data Science UCSB Officers"
+          width={1000}
+          height={500}
+          style={{ objectFit: "cover" }}
+          className="rounded-md"
+        />
       </div>
     </div>
   );
