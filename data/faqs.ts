@@ -34,7 +34,7 @@ const faqs = [
     question:
       "When are the project meetings and how often am I supposed to attend them?",
     answer:
-      "Project meetings are on Thursday on Zoom from 7-9pm. You must not miss 3 project meetings or else your project cannot be presented at the showcase.",
+      "Project meetings are on Thursday on Zoom from 7-8pm. You must not miss 3 project meetings or else your project cannot be presented at the showcase. At this time, we are not accepting any more project groups until next year. However, you can still attend our workshops to gain technical and professional skills!",
   },
   {
     question: "Which languages will I be using within the club?",

@@ -6,6 +6,7 @@ const headerNavLinks = [
   { href: "/alumni", title: "Alumni" },
   { href: "/faq", title: "FAQ" },
   { href: "/about", title: "About" },
+  { href: "/register", title: "Register"}
 ];
 
 export default headerNavLinks;

@@ -13,7 +13,7 @@ const homepageEvents = [
   },
   {
     title: "Meeting Times and Locations",
-    description: "TBD",
+    description: "Weekly project meetings 7-8pm",
     imageUrl: "/images/kickoff.jpg",
   },
   {
