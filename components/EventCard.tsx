@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Modal from "./Modal";
 
 interface Event {
   title: string;
@@ -20,8 +21,9 @@ function EventCard({ title, description, longDescription, date, imageUrl, expand
 
   return (
     <button onClick={()=>setEventExpanded(!eventInfo)} className="hover:shadow-lg">
-    <motion.div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-      <motion.div className="relative w-full" style={{ height: `${imageHeight}px` }}>
+    {   
+    <div className="transition ease-in-out delay-150 bg-white shadow-lg hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 hover:text-white duration-300 ...">
+      <div className="relative w-full" style={{ height: `${imageHeight}px` }}>
         <Image
           src={(!eventInfo) ? imageUrl : expandedImage}
           alt={title}
@@ -30,20 +32,20 @@ function EventCard({ title, description, longDescription, date, imageUrl, expand
           style={{ objectFit: "cover" }}
           className="bg-coverrounded-t-lg"
         />
-      </motion.div>
-      <motion.div className="px-6 py-4">
-        <motion.div className="font-bold text-xl mb-2">{title}</motion.div>
+      </div>
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{title}</div>
         {(!eventInfo) 
-        ? <p className="text-gray-700 text-base">{description}</p>
-        : <p className="text-gray-700 text-base" style={{height: "auto"}}>{longDescription}</p>
+        ? <p className="text-base">{description}</p>
+        : <p className="text-base" style={{height: "auto"}}>{longDescription}</p>
         }
-      </motion.div>
-      <motion.div className="px-6 pt-4 pb-2">
+      </div>
+      <div className="px-6 pt-4 pb-2">
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
           {date}
         </span>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>}
   </button>
   );
 }

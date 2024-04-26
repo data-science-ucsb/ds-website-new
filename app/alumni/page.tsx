@@ -16,6 +16,7 @@ const Alumni = () => {
             gradYear={alumni.gradYear}
             description={alumni.description}
             imageUrl={alumni.imageUrl}
+            linkedIn={alumni.linkedIn}
           />
         ))}
       </div>

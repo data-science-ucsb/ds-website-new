@@ -1,10 +1,5 @@
 const faqs = [
   {
-    question: "How can I register for the 2023-2024 school year?",
-    answer:
-      "Sign up here: https://forms.gle/jiGVg7n9dtZEKSEF7, also Zelle $20 to us at datascience.ucsb@gmail.com!",
-  },
-  {
     question: "Do I need Data Science experience to join the club?",
     answer:
       "No! If you have little to no data science or coding experience, we'll teach you everything you need to know to help you achieve your goals in data science!",
@@ -44,7 +39,7 @@ const faqs = [
   {
     question: "How can I get more involved with the club?",
     answer:
-      "Anybody is welcome to join the club, and the best way to get more involved is to attend the weekly general meetings! Also, follow us on our social media platforms and join Data Science UCSB’s Slack channel to stay updated on upcoming events!",
+      "Anybody is welcome to join the club, and the best way to get more involved is to attend our workshops, socials, data talks, and other professional events! Also, follow us on our social media platforms and join Data Science UCSB’s Slack channel to stay updated on upcoming events!",
   },
   {
     question: "What do I need to bring to the meetings?",
