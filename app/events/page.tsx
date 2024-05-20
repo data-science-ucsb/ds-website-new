@@ -10,6 +10,9 @@ function Events() {
 
   return (
     <div className="container mx-auto px-4 sm:px-8">
+      <h1 className="text-4xl font-bold text-center mb-12">
+        Past Events
+      </h1>
       <div className="flex flex-wrap -mx-1 lg:-mx-4">
         {events.map((event) => (
           <div

@@ -8,7 +8,7 @@ const faqs = [
     question:
       "Do I have to be a Computer Science or Statistics & Data Science major to join the club?",
     answer:
-      "No, the club is not restricted to any particular major. We welcome all who are interested in data science!",
+      "No, the club is open to all majors! We welcome all who are interested in data science!",
   },
   {
     question: "Are there requirements and strict settings within the club?",
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "What is the Project Showcase?",
     answer:
-      "The Project Showcase is an opportunity for you to show off you and your project group’s hard work at the end of the year! After working for multiple quarters on a project that your group devises, the finished project can be submitted, reviewed, and presented at the Project Showcase.",
+      "The Project Showcase is an opportunity for you to show off your project group’s hard work at the end of the year! After working for multiple quarters on a project that your group devises, the finished project can be submitted, reviewed, and presented at the Project Showcase.",
   },
   {
     question:
@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "How can I get more involved with the club?",
     answer:
-      "Anybody is welcome to join the club, and the best way to get more involved is to attend our workshops, socials, data talks, and other professional events! Also, follow us on our social media platforms and join Data Science UCSB’s Slack channel to stay updated on upcoming events!",
+      "Anybody is welcome to join the club, and the best way to get more involved is to attend our workshops, socials, data talks, and other professional events! Also, follow us on our social media platforms and join Data Science UCSB’s Discord Server to stay updated on upcoming events!",
   },
   {
     question: "What do I need to bring to the meetings?",

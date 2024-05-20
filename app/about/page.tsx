@@ -25,6 +25,7 @@ const AboutPage = () => {
               role={member.role}
               bio={member.bio}
               imageUrl={member.imageUrl}
+              linkedIn={member.linkedIn}
             />
           ))}
         </div>
@@ -42,6 +43,7 @@ const AboutPage = () => {
               role={member.role}
               bio={member.bio}
               imageUrl={member.imageUrl}
+              linkedIn={member.linkedIn}
             />
           ))}
         </div>
@@ -59,6 +61,7 @@ const AboutPage = () => {
               role={member.role}
               bio={member.bio}
               imageUrl={member.imageUrl}
+              linkedIn={member.linkedIn}
             />
           ))}
         </div>
@@ -76,6 +79,7 @@ const AboutPage = () => {
               role={member.role}
               bio={member.bio}
               imageUrl={member.imageUrl}
+              linkedIn={member.linkedIn}
             />
           ))}
         </div>
