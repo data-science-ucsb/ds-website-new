@@ -14,7 +14,8 @@ const Alumni = () => {
             key={index}
             name={alumni.name}
             gradYear={alumni.gradYear}
-            description={alumni.description}
+            major={alumni.major}
+            job={alumni.job}
             imageUrl={alumni.imageUrl}
             linkedIn={alumni.linkedIn}
           />

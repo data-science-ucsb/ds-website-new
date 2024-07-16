@@ -60,7 +60,7 @@ function EventCard({ title, description, longDescription, date, imageUrl, expand
       {
         <div>
           <div className="flex justify-center">
-            <div className="relative w-full" style={{ height: `${imageHeight}px` }}>
+            <div className="relative w-full max-h-200 w-25 p-4" style={{ height: `${imageHeight}px` }}>
               <Image
                 src={expandedImage}
                 alt={title}
