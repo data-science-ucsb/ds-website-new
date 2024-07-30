@@ -6,6 +6,9 @@ import { useState } from "react";
 interface BoardProfileCardProps {
   name: string;
   role: string;
+  major: string;
+  position: string;
+  interests: string;
   bio: string;
   imageUrl: string;
   linkedIn: string;
@@ -14,6 +17,9 @@ interface BoardProfileCardProps {
 export const BoardProfileCard = ({
   name,
   role,
+  major,
+  position,
+  interests,
   bio,
   imageUrl,
   linkedIn,
@@ -30,9 +36,12 @@ export const BoardProfileCard = ({
             fill
           />
         </div>
-        <p className="md:font-bold">{name}</p>
+        {/* <p className="md:font-bold">{name}</p>
         <p>{role}</p> <br/>
-        <p>{bio}</p>
+        <p>{bio}</p> */}
+        <p>{major}</p>
+        <p>{position}</p>
+        <p>{interests}</p>
       </div>
     </a>
   );

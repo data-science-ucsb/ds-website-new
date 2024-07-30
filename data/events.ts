@@ -1,4 +1,14 @@
+import { description } from "./siteMetadata";
+
 const events = [
+  {
+    title: "Fall 2024 Data Science UCSB Career Fair",
+    description: "We're going to host our 3rd annual Data Science UCSB Career Fair!",
+    longDescription: "We will host this event virtually on October 25, 2024 from 10am-4pm. For more details about event logistics and pricing, go to the Career Fair tab!",
+    date: "October 25, 2024",
+    imageUrl: "/images/careerfair24/2024-career-fair-logo.png",
+    expandedImage: "/images/careerfair24/2024-career-fair-logo.png"
+  },
   {
     title: "Fall 2023 Data Science UCSB Career Fair",
     description:

@@ -22,6 +22,9 @@ const AboutPage = () => {
               key={index}
               name={member.name}
               role={member.role}
+              major={"🎓 " + member.major}
+              position={"💼 " + member.position}
+              interests={"😀 " + member.interests}
               bio={member.bio}
               imageUrl={member.imageUrl}
               linkedIn={member.linkedIn}
@@ -37,12 +40,15 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {marketingAndOperationsTeam.map((member, index) => (
             <BoardProfileCard
-              key={index}
-              name={member.name}
-              role={member.role}
-              bio={member.bio}
-              imageUrl={member.imageUrl}
-              linkedIn={member.linkedIn}
+            key={index}
+            name={member.name}
+            role={member.role}
+            major={"🎓 " + member.major}
+            position={"💼 " + member.position}
+            interests={"😀 " + member.interests}
+            bio={member.bio}
+            imageUrl={member.imageUrl}
+            linkedIn={member.linkedIn}
             />
           ))}
         </div>
@@ -55,12 +61,15 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {techDevTeam.map((member, index) => (
             <BoardProfileCard
-              key={index}
-              name={member.name}
-              role={member.role}
-              bio={member.bio}
-              imageUrl={member.imageUrl}
-              linkedIn={member.linkedIn}
+            key={index}
+            name={member.name}
+            role={member.role}
+            major={"🎓 " + member.major}
+            position={"💼 " + member.position}
+            interests={"😀 " + member.interests}
+            bio={member.bio}
+            imageUrl={member.imageUrl}
+            linkedIn={member.linkedIn}
             />
           ))}
         </div>
