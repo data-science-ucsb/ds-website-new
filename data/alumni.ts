@@ -1,143 +1,211 @@
 export const alumniData = [
   {
+    name: "Sterling Hsu",
+    gradYear: "UCSB '27",
+    major: "Computer Science",
+    job: "Outreach Director @ Fremont Debate",
+    imageUrl: "/images/alumni/sterling-hsu.png",
+    linkedIn: "https://www.linkedin.com/in/sterlinghsu/"
+  },
+  {
+    name: "Diya Vij",
+    gradYear: "UC Berkeley '26",
+    major: "Applied Mathematics",
+    job: "Data Services Employee @ UCSB IT",
+    imageUrl: "/images/alumni/diya-vij.jpg",
+    linkedIn: "https://www.linkedin.com/in/diya-vij-916a30167/"
+  },
+  {
+    name: "Chloe Tse",
+    gradYear: "UCLA '26",
+    major: "Mathematics/Economics",
+    job: "Product Management Intern @ Workato",
+    imageUrl: "/images/alumni/chloe-tse.jpg",
+    linkedIn: "https://www.linkedin.com/in/chloetsehy/"
+  },
+  {
+    name: "Jeffrey Cao",
+    gradYear: "UCSB '24",
+    major: "Computer Science",
+    job: "Software Engineer Intern @ Atlassian",
+    imageUrl: "/images/alumni/jeffrey-cao.jpg",
+    linkedIn: "https://www.linkedin.com/in/sparklyjeff/"
+  },
+  {
+    name: "Mateo Wang",
+    gradYear: "UCSB '24",
+    major: "Computer Science",
+    job: "Software Engineer @ Arista Networks",
+    imageUrl: "/images/alumni/mateo-wang.jpg",
+    linkedIn: "https://www.linkedin.com/in/mateo-wang/"
+  },
+  {
+    name: "Krish Agarwal",
+    gradYear: "UCSB '24",
+    major: "Computer Science",
+    job: "Software Engineer @ Priority Holdings",
+    imageUrl: "/images/alumni/krish-agarwal.jpg",
+    linkedIn: "https://www.linkedin.com/in/kshitij-ucsb/"
+  },
+  {
     name: "Luke Fields",
     gradYear: "UCSB '23",
-    description:
-      "Luke studied Statistics and Data Science at UCSB and is now a Pricing Analyst at Honda.",
+    major: "Statistics & Data Science",
+    job: "Pricing Analyst @ Honda",
     imageUrl: "/images/alumni/luke-fields.jpg",
+    linkedIn: "https://www.linkedin.com/in/luke-fields/"
   },
   {
     name: "Stella Jia",
-    gradYear: "UCSB '23",
-    description:
-      "Stella studied data science at UCSB and is now a data science major at UC Berkeley.",
+    gradYear: "UC Berkeley '25",
+    major: "Data Science",
+    job: "BI Engineer Intern @ Amazon",
     imageUrl: "/images/alumni/stella-jia.jpg",
+    linkedIn: "https://www.linkedin.com/in/stellajia/"
   },
   {
     name: "Anna Bauer",
     gradYear: "UCSB '23",
-    description:
-      "Anna was a Statistics & Data Science major at UCSB and is now a tech analyst at Deloitte.",
+    major: "Statistics & Data Science",
+    job: "Cloud Engineer @ Deloitte",
     imageUrl: "/images/alumni/anna-bauer.png",
+    linkedIn: "https://www.linkedin.com/in/annabauer726/"
   },
   {
     name: "Katie Huynh",
     gradYear: "UCSB '23",
-    description:
-      "Katie studied Statistics and Data Science at UCSB and is now an analyst at General Mills.",
+    major: "Statistics & Data Science",
+    job: "Analyst @ General Mills",
     imageUrl: "/images/alumni/katie-huynh.jpg",
+    linkedIn: "https://www.linkedin.com/in/katiehuynh01/"
   },
   {
     name: "Connor Levenson",
     gradYear: "UCSB '22",
-    description:
-      "Connor studied actuarial science at UCSB and is now a research engineer at UCSB.",
+    major: "Actuarial Science",
+    job: "Research Engineer @ UCSB",
     imageUrl: "/images/alumni/connor-levenson.png",
+    linkedIn: "https://www.linkedin.com/in/connor11son/"
   },
   {
     name: "Ishana Narayanan",
     gradYear: "UCSB '22",
-    description:
-      "Ishana was a Computer Science and Statistics & Data Science double major at UCSB and is now a software engineer at Google.",
+    major: "Computer Science",
+    job: "Software Engineer @ Google",
     imageUrl: "/images/alumni/ishana-narayanan.jpg",
+    linkedIn: "https://www.linkedin.com/in/ishana-n-58a90b170/"
   },
   {
     name: "Brian Lim",
     gradYear: "UCSB '21",
-    description:
-      "Brian studied computer science at UCSB and is now a software development engineer at Amazon.",
+    major: "Computer Science",
+    job: "Software Engineer @ Palantir",
     imageUrl: "/images/alumni/brian-lim.jpg",
+    linkedIn: "https://www.linkedin.com/in/blimmie/"
   },
   {
     name: "Natalie Rozak",
     gradYear: "UCSB '20",
-    description:
-      "Natalie studied statistics & data science at UCSB and is now a data scientist at BASF.",
+    major: "Statistics & Data Science",
+    job: "Data Scientist @ BASF",
     imageUrl: "/images/alumni/natalie-rozak.jpg",
+    linkedIn: "https://www.linkedin.com/in/natalie-rozak-74147b13b/"
   },
   {
     name: "Jasmine Kellogg",
     gradYear: "UCSB '20",
-    description:
-      "Jasmine studied statistics & data science at UCSB and is now a data analyst at Scalable Commerce.",
+    major: "Statistics & Data Science",
+    job: "Data Scientist @ Canva",
     imageUrl: "/images/alumni/jasmine-kellogg.jpg",
+    linkedIn: "https://www.linkedin.com/in/jasmine-kellogg/"
   },
   {
     name: "Claire Qian",
     gradYear: "UCSB '20",
-    description:
-      "Claire studied statistics & data science at UCSB and is now a data analyst at Neo Media World.",
+    major: "Statistics & Data Science",
+    job: "Data Analyst @ Neo Media World",
     imageUrl: "/images/alumni/claire-qian.jpg",
+    linkedIn: "https://www.linkedin.com/in/claire-q-6ba818120/"
   },
   {
     name: "Sunny Hong",
     gradYear: "UCSB '20",
-    description:
-      "Sunny studied statistics & data science at UCSB and is now an analyst at RPA.",
+    major: "Statistics & Data Science",
+    job: "Analyst @ RPA",
     imageUrl: "/images/alumni/sunny-hong.jpg",
+    linkedIn: "https://www.linkedin.com/in/sunnysungheehong/"
   },
   {
     name: "Daniel Fields",
     gradYear: "UCSB '19",
-    description:
-      "Daniel studied statistics at UCSB and is now a data scientist at Pacific Life.",
+    major: "Statistics & Data Science",
+    job: "Data Scientist @ Pacific Life",
     imageUrl: "/images/alumni/daniel-fields.jpg",
+    linkedIn: "https://www.linkedin.com/in/danielfields365/"
   },
   {
     name: "Shakuntala Mitra",
     gradYear: "UCSB '19",
-    description:
-      "Shakuntala studied biochemistry at UCSB and is now a ML engineer at AWE Technologies.",
+    major: "Biochemistry",
+    job: "ML Engineer @ AWE Technologies",
     imageUrl: "/images/alumni/shakuntala-mitra.jpg",
+    linkedIn: "https://www.linkedin.com/in/shakuntala-mitra/"
   },
   {
     name: "Calvin Wang",
     gradYear: "UCSB '19",
-    description:
-      "Calvin studied computing at UCSB (CCS) and is now an applied scientist at AWS.",
+    major: "Computer Science",
+    job: "Applied Scientist @ AWS",
     imageUrl: "/images/alumni/calvin-wang.jpg",
+    linkedIn: "https://www.linkedin.com/in/calvinwang0628/"
   },
   {
     name: "Jason Freeberg",
     gradYear: "UCSB '18",
-    description:
-      "Jason studied statistics at UCSB and is now a product manager at Microsoft.",
+    major: "Statistics",
+    job: "Product Manager @ Snowflake",
     imageUrl: "/images/alumni/jason-freeberg.jpg",
+    linkedIn: "https://www.linkedin.com/in/jfreeberg/"
   },
   {
     name: "Nathan Fritter",
     gradYear: "UCSB '17",
-    description:
-      "Nathan studied applied statistics at UCSB and is now a data consultant at Qbiz.",
+    major: "Applied Statistics",
+    job: "Senior Data Engineer @ Capital One",
     imageUrl: "/images/alumni/nathan-fritter.jpg",
+    linkedIn: "https://www.linkedin.com/in/nathan-fritter/"
   },
   {
     name: "Celine Mol",
     gradYear: "UCSB '17",
-    description:
-      "Celine studied statistical sciences at UCSB and is now the Cofounder and CTO of Beni.",
+    major: "Statistical Sciences",
+    job: "Co-founder & CTO @ Beni",
     imageUrl: "/images/alumni/celine-mol.jpg",
+    linkedIn: "https://www.linkedin.com/in/celinemol/"
   },
   {
     name: "Raul Eulogio",
     gradYear: "UCSB '16",
-    description:
-      "Raul studied statistics at UCSB and is now a Senior Data Science Engineer at Evidation.",
+    major: "Statistics",
+    job: "Senior Data Science Engineer @ Evidation",
     imageUrl: "/images/alumni/raul-eulogio.jpg",
+    linkedIn: "https://www.linkedin.com/in/raul-eulogio/"
   },
   {
     name: "David Campos",
     gradYear: "UCSB '15",
-    description:
-      "David studied econ and Spanish at UCSB and is now a data architect at Delta Emerald Ventures.",
+    major: "Economics & Spanish",
+    job: "Data Architect @ Delta Emerald Ventures",
     imageUrl: "/images/alumni/david-campos.jpg",
+    linkedIn: "https://www.linkedin.com/in/dcamposliz/"
   },
   {
     name: "Holly Cheek",
     gradYear: "UC Berkeley '20",
-    description:
-      "Holly was an operations officer for our club and is now a product manager at Workday.",
+    major: "Statistics",
+    job: "Product Manager @ Workday",
     imageUrl: "/images/alumni/holly-cheek.jpg",
+    linkedIn: "https://www.linkedin.com/in/hollycheek/"
   },
 ];
 

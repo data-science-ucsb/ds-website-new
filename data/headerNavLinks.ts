@@ -1,12 +1,13 @@
 const headerNavLinks = [
   { href: "/", title: "Home" },
   // { href: '/blog', title: 'Blog' },
+  { href: "/career-fair", title: "Career Fair" },
   { href: "/events", title: "Events" },
   // { href: '/projects', title: 'Projects' },
-  { href: "/career-fair", title: "Career Fair" },
-  { href: "/alumni", title: "Alumni" },
   { href: "/faq", title: "FAQ" },
-  { href: "/about", title: "About" },
+  { href: "/alumni", title: "Alumni" },
+  { href: "/about", title: "Officers" },
+  { href: "/register", title: "Register"}
 ];
 
 export default headerNavLinks;

@@ -1,32 +1,48 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 interface BoardProfileCardProps {
   name: string;
   role: string;
+  major: string;
+  position: string;
+  interests: string;
   bio: string;
   imageUrl: string;
+  linkedIn: string;
 }
 
 export const BoardProfileCard = ({
   name,
   role,
+  major,
+  position,
+  interests,
   bio,
   imageUrl,
+  linkedIn,
 }: BoardProfileCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <div className="flex flex-col items-center bg-white p-6 shadow rounded-lg">
-      <div className="w-48 h-48 relative overflow-hidden rounded-full mb-2">
-        <Image
-          src={imageUrl}
-          alt={name}
-          fill
-          style={{ objectFit: "cover" }}
-          className="rounded-full"
-        />
+    <a href={linkedIn} target="_blank" className="max-h-200 w-25 p-4">
+      <div className="flex flex-col items-center rounded-lg bg-white p-4 shadow-lg hover:-translate-y-1 hover:scale-100 hover:bg-blue-600 hover:text-stone-50 duration-300 h-100 overflow-hidden">
+        <div className="w-48 h-48 relative overflow-hidden rounded-full mb-2">      
+          <Image
+            src={imageUrl}
+            alt={name}
+            fill
+          />
+        </div>
+        {/* <p className="md:font-bold">{name}</p>
+        <p>{role}</p> <br/>
+        <p>{bio}</p> */}
+        <p>{major}</p>
+        <p>{position}</p>
+        <p>{interests}</p>
       </div>
-      <h3 className="text-lg font-semibold mt-4">{name}</h3>
-      <p className="text-sm text-gray-500">{role}</p>
-      <p className="text-center text-gray-700 mt-2">{bio}</p>
-    </div>
+    </a>
   );
 };

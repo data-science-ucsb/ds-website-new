@@ -30,7 +30,7 @@ export default function Home() {
         <h1 className="text-2xl md:text-2xl lg:text-3xl font-extrabold leading-9 tracking-tight text-gray-900">
           Our Mission
         </h1>
-        <p className="font-lato text-base md:text-lg lg:text-xl leading-7 text-gray-500 max-w-2xl mx-auto">
+        <p className="text-base md:text-lg lg:text-xl leading-7 text-gray-500 max-w-2xl mx-auto">
           We provide Gauchos with the resources and community to learn, share,
           and create in the realm of data science. Our vision is to be the
           platform through which companies and faculty researchers seek the best
