@@ -1,5 +1,5 @@
 import Link from "./Link";
-import siteMetadata from "@/data/siteMetadata";
+import siteMetadata from "@/app/data/siteMetadata";
 
 export default function Footer() {
   return (

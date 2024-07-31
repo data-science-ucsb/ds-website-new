@@ -4,7 +4,7 @@ import {
   executiveTeam,
   marketingAndOperationsTeam,
   techDevTeam,
-} from "@/data/board";
+} from "@/app/data/board";
 
 const AboutPage = () => {
   return (

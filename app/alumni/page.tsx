@@ -1,5 +1,5 @@
 import AlumniCard from "@/components/AlumniProfileCard";
-import alumniData from "@/data/alumni";
+import alumniData from "@/app/data/alumni";
 import Image from "next/image";
 
 const Alumni = () => {

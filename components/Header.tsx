@@ -1,5 +1,5 @@
-import siteMetadata from "@/data/siteMetadata";
-import headerNavLinks from "@/data/headerNavLinks";
+import siteMetadata from "@/app/data/siteMetadata";
+import headerNavLinks from "@/app/data/headerNavLinks";
 import Link from "./Link";
 import Image from "next/image";
 import MobileNav from "./MobileNav";

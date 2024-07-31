@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HomepageEventsSection from "@/components/HomepageEventsSection";
 import SponsorsSection from "@/components/SponsorsSection";
-import events from "@/data/homepage-events";
+import events from "@/app/data/homepage-events";
 
 export default function Home() {
   return (

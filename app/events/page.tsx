@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import events from "@/data/events";
+import events from "@/app/data/events";
 import EventCard from "@/components/EventCard";
 
 function Events() {
