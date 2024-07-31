@@ -43,7 +43,7 @@ export const alumniData = [
     name: "Krish Agarwal",
     gradYear: "UCSB '24",
     major: "Computer Science",
-    job: "Student Software Engineer @ Teware",
+    job: "Software Engineer @ Priority Holdings",
     imageUrl: "/images/alumni/krish-agarwal.jpg",
     linkedIn: "https://www.linkedin.com/in/kshitij-ucsb/"
   },
@@ -99,7 +99,7 @@ export const alumniData = [
     name: "Brian Lim",
     gradYear: "UCSB '21",
     major: "Computer Science",
-    job: "Software Engineer @ Amazon",
+    job: "Software Engineer @ Palantir",
     imageUrl: "/images/alumni/brian-lim.jpg",
     linkedIn: "https://www.linkedin.com/in/blimmie/"
   },
