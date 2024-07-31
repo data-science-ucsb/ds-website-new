@@ -1,5 +1,5 @@
 import React from "react";
-import faqs from "@/data/faqs";
+import faqs from "@/app/data/faqs";
 
 const FAQPage = () => {
   return (

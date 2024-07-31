@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sponsors from "@/data/sponsors";
+import sponsors from "@/app/data/sponsors";
 
 const SponsorsSection = () => {
   return (

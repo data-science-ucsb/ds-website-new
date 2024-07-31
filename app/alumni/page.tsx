@@ -1,5 +1,5 @@
 import AlumniCard from "@/components/AlumniProfileCard";
-import alumniData from "@/data/alumni";
+import alumniData from "@/app/data/alumni";
 import Image from "next/image";
 
 const Alumni = () => {
@@ -13,9 +13,9 @@ const Alumni = () => {
           <AlumniCard
             key={index}
             name={alumni.name}
-            gradYear={alumni.gradYear}
-            major={alumni.major}
-            job={alumni.job}
+            gradYear={"🎓 " + alumni.gradYear}
+            major={"📚 " + alumni.major}
+            job={"💼 " + alumni.job}
             imageUrl={alumni.imageUrl}
             linkedIn={alumni.linkedIn}
           />

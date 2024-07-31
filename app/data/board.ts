@@ -50,7 +50,7 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     position: "Data Analytics Intern @ Wells Fargo",
     interests: "Social Events, Data Analytics",
     bio: "Hi, I’m Sam, and I’m thrilled to serve as the Director of Prof Dev for the upcoming year! Data Science UCSB has been a transformative experience in my college career, igniting my passion for giving back to our community through human-centric approaches that drive valuable impact. I’m excited to meet all the members and collaborate on awesome data-related projects! Feel free to reach out on Discord or Instagram if you’d like to chat!",
-    imageUrl: "/images/board/samantha-su.jpg",
+    imageUrl: "/images/board/samantha-su.png",
     linkedIn: "https://www.linkedin.com/in/samanthasu516/"
   },
   {

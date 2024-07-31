@@ -36,9 +36,8 @@ export const BoardProfileCard = ({
             fill
           />
         </div>
-        {/* <p className="md:font-bold">{name}</p>
+        <p className="md:font-bold">{name}</p>
         <p>{role}</p> <br/>
-        <p>{bio}</p> */}
         <p>{major}</p>
         <p>{position}</p>
         <p>{interests}</p>
