@@ -7,6 +7,15 @@ function CareerFair() {
         <h1 className="text-4xl font-bold text-center mb-12">
           2024 Data Science UCSB Career Fair
         </h1>
+
+        <div className="flex justify-center">
+          <Image 
+            src="/images/careerfair24/2024-career-fair-logo.png"
+            alt="2024 Data Science UCSB Career Fair"
+            width={600}
+            height={400}
+          />
+        </div>
         
         <p>
         Thank you for considering to attend our annual virtual Data Science Career Fair on October 25th, 2024 from 10 AM to 4 PM. As the most active STEM club on campus with over 500 registered members and 200 career fair attendees as of last year, we are confident that this fair will provide an excellent opportunity for company representatives to engage with talented students interested in data science!

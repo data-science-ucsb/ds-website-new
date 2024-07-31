@@ -13,9 +13,9 @@ const Alumni = () => {
           <AlumniCard
             key={index}
             name={alumni.name}
-            gradYear={alumni.gradYear}
-            major={alumni.major}
-            job={alumni.job}
+            gradYear={"🎓 " + alumni.gradYear}
+            major={"📚 " + alumni.major}
+            job={"💼 " + alumni.job}
             imageUrl={alumni.imageUrl}
             linkedIn={alumni.linkedIn}
           />
