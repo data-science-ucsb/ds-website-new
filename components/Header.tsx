@@ -32,19 +32,12 @@ const Header = () => {
         {headerNavLinks
           .filter((link) => link.href !== "/")
           .map((link) => (
-            link.title === "Register" ? 
-            <Link
-              key={link.title}
-              href={"https://forms.gle/GDa5qd5JNwhftGur8"}
-              className="hidden font-medium text-gray-900  sm:block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full"
-            >{link.title}</Link> 
-            : 
             <Link
               key={link.title}
               href={link.href}
-              className="hidden font-medium text-gray-900  sm:block"
-            >{link.title}</Link>)
-            )}
+              className={link.title === "Register" ? "hidden font-medium text-gray-900  sm:block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full" : "hidden font-medium text-gray-900  sm:block"}
+            >{link.title}</Link> 
+          ))}
         <MobileNav />
       </div>
     </header>
