@@ -104,13 +104,13 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     linkedIn: "https://www.linkedin.com/in/rachna-bokka-406a04229/"
   },
   {
-    name: "Makala Mesina-Forester",
+    name: "Makala Messina-Forester",
     role: "Director of Design",
     major: "Statistics & Data Science",
     position: "Code Coordinator @ theCoderSchool",
     interests: "Reading, going to the beach, art",
     bio: "Hi! I’m Makala and I’m a second year Statistics & Data Science major from the Bay Area. I joined Data Science UCSB to grow my professional experience, develop my skills, and connect with new people. As this year’s Director of Design, I’m looking forward to bringing new ideas that will both express my creativity and build upon the club’s artistic vision. In my spare time, you can find me reading or at the beach with my friends.",
-    imageUrl: "/images/board/makala-mesina-forester.png",
+    imageUrl: "/images/board/makala-messina-forester.png",
     linkedIn: "https://www.linkedin.com/in/makala-mesina-forester-617013272/"
   },
   {
