@@ -170,7 +170,7 @@ export const techDevTeam: BoardMember[] = [
     name: "Clement Boiteux",
     role: "Director of Web Development",
     major: "Computer Engineering",
-    position: "Student Ambassador @ Intel",
+    position: "IT Intern @ PolyPlus Battery Company",
     interests: "Watching movies, playing 8-ball, biking",
     bio: "Hi, I’m Clement and I’m a 2nd-year Computer Engineering major from San Jose who's passionate about using technology to solve problems and simplify our lives. My 3 most favorite programming languages are Java, Python, and C++. I’m interested in discovering the intersection of AI and system software to build smarter computers. I'm also very excited to learn web dev technologies to improve the website so users have a better experience! My most favorite foods are ramen, boba, and ice cream. In my free time, I like watching movies, playing 8-ball, and biking.",
     imageUrl: "/images/board/clement-boiteux.png",
