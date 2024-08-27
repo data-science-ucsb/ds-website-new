@@ -3,9 +3,7 @@ import boardMembers from "@/app/data/board";
 import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 
-export const config = {
-  runtime: 'edge',
-};
+export const runtime = "edge";
 
 async function getRole(url: string) {
   const response = await fetch(url);
