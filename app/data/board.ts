@@ -131,9 +131,9 @@ export const techDevTeam: BoardMember[] = [
     role: "Director of Technical Development",
     major: "Computer Science",
     position: "Software Engineer Intern @ Cisco",
-    interests: "Data privacy, Machine Learning, Full-Stack Development",
+    interests: "Data privacy, Machine Learning, Bouldering",
     bio: "I’m a 3rd year CS major who loves building cool things with computers! I’ve spent years writing + deploying full-stack web apps and training ML models to fly planes. My interest in data privacy has led me to build and maintain servers for a homelab. I also love teaching and getting others as excited about CS as I do!",
-    imageUrl: "/images/board/tanay-biradar.jpg",
+    imageUrl: "/images/board/tanay-biradar.png",
     linkedIn: "https://www.linkedin.com/in/tanayb11/"
   },
   {
