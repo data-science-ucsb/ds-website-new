@@ -35,3 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /app/data/cron-job.ts
+/app/vercel.json

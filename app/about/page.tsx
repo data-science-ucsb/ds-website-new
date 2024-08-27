@@ -75,22 +75,6 @@ const AboutPage = () => {
         </div>
       </section>
       <br/> <br/>
-      <h1 className="text-4xl font-bold text-center mb-12">
-          2023-24 Officers
-      </h1>
-      <div className="flex justify-center">
-        <Image
-          src="/images/board/board2023.jpg"
-          alt="Data Science UCSB Officers"
-          width={1000}
-          height={500}
-          style={{ objectFit: "cover" }}
-          className="rounded-md"
-        /> <br/>
-      </div>
-      <div>
-        <p className="text-center">Not pictured: Aliza Samad</p>
-      </div>
     </div>
   );
 };

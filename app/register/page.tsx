@@ -7,10 +7,10 @@ const Register = () => {
     <div className="container mx-auto px-4 py-8">
         <div className="flex justify-center">
             <Image
-                src="/images/home4.jpg"
-                alt="Project Group Collaboration"
-                width={600}
-                height={400}
+              src="/images/misc-events/home4.jpg"
+              alt="Project Group Collaboration"
+              width={600}
+              height={400}
             />
         </div> <br></br>
         <p className='text-center'>

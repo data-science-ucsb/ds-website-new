@@ -41,7 +41,7 @@ const events = [
       "Weekly panel of UCSB alumni sharing their experiences with data science before and after graduating!",
     longDescription: "Earlier this month, our data science club was fortunate to host a panel of alumni back on campus to share their experiences and provide advice to current students. The panelists were Talah Cummins who is a Senior Product Analyst @ Visa and Co-Founder at PoolUp, Phi Do who is a Data & Graphics Journalist @ LA Times, Erik Vargas who is an Operations Research Analyst @ US Navy, \n\n A key theme was the importance of networking and making connections in the data science community. Our alumni emphasized seeking out mentors both at work and through professional associations. They also recommended networking with alumni from our program, reaching out cold via LinkedIn or email.\n\n In terms of finding that first job, alumni advised students to cast a wide net and apply broadly. Though it can be challenging to get your foot in the door, once you secure that first data science role, doors continue opening in the future. When evaluating job offers, consider opportunities for growth and learning.\n\n We are proud of our accomplished alumni and thank them for giving back to the data science club. Their journey demonstrates the breadth of career paths enabled by a data science education. For current students, their insights help prepare us for the next step after graduation.",
     date: "August 21, 2023",
-    imageUrl: "/images/alumni-august-2023-ss0.png",
+    imageUrl: "/images/misc-events/alumni-august-2023-ss0.png",
     expandedImage: "/images/alumni-august-2023-ss0.png"
   },
   {

@@ -35,7 +35,7 @@ export const alumniData = [
     name: "Mateo Wang",
     gradYear: "UCSB '24",
     major: "Computer Science",
-    job: "Software Engineer @ Arista Networks",
+    job: "MLE Intern @ MOLOCO",
     imageUrl: "/images/alumni/mateo-wang.jpg",
     linkedIn: "https://www.linkedin.com/in/mateo-wang/"
   },
