@@ -36,7 +36,6 @@ const ProjectCard = ({name, technologies, concepts, contributors, description, i
             {contributors}
           </span>
         </div>
-      </div>
     </div>
   );
 }
