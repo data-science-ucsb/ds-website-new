@@ -17,7 +17,6 @@ const imageHeight = 200;
 
 function EventCard({ title, description, longDescription, date, imageUrl, expandedImage }: Event) {
   const [eventInfo, setEventExpanded] = useState(false);
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {

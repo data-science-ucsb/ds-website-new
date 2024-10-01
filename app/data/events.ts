@@ -2,6 +2,22 @@ import { description } from "./siteMetadata";
 
 const events = [
   {
+    title: "Summer 2024 Sunset Social",
+    description: "We had a fun time organizing the Sunset Social to keep our continuing members engaged and introduce new members to the club!",
+    longDescription: "We had a fun time organizing the Sunset Social to keep our continuing members engaged and introduce new members to the club!",
+    date: "August 24, 2024",
+    imageUrl: "/images/blog2024-25/sunset-social-2024.jpg",
+    expandedImage: "/images/blog2024-25/sunset-social-2024.jpg",
+  },
+  {
+    title: "Alumni August 2024",
+    description: "We hosted our annual Alumni August event where they shared valuable career experience!",
+    longDescription: "We hosted our annual Alumni August event where they shared valuable career experience!",
+    date: "August 22, 2024",
+    imageUrl: "/images/blog2024-25/alumni-august-2024.png",
+    expandedImage: "/images/blog2024-25/sunset-social-2024.jpg"
+  },
+  {
     title: "Fall 2024 Data Science UCSB Career Fair",
     description: "We're going to host our 3rd annual Data Science UCSB Career Fair!",
     longDescription: "We will host this event virtually on October 25, 2024 from 10am-4pm. For more details about event logistics and pricing, go to the Career Fair tab!",
@@ -29,7 +45,7 @@ const events = [
   },
   {
     title: "Date-A Science 2023",
-    description: "Speed dating event for our new members!",
+    description: "Speed dating event for our new members to learn more about each other!",
     longDescription: "We got a chance to meet our incoming members and bond with our staff! Members got the opportunity to make new friends and win prizes from Bingo! We hope to meet with you guys in-person once school starts.",
     date: "September 03, 2023",
     imageUrl: "/images/date-a-science-2023.png",
@@ -38,7 +54,7 @@ const events = [
   {
     title: "Alumni August 2023",
     description:
-      "Weekly panel of UCSB alumni sharing their experiences with data science before and after graduating!",
+      "Alumni sharing their experiences with data science before and after graduating!",
     longDescription: "Earlier this month, our data science club was fortunate to host a panel of alumni back on campus to share their experiences and provide advice to current students. The panelists were Talah Cummins who is a Senior Product Analyst @ Visa and Co-Founder at PoolUp, Phi Do who is a Data & Graphics Journalist @ LA Times, Erik Vargas who is an Operations Research Analyst @ US Navy, \n\n A key theme was the importance of networking and making connections in the data science community. Our alumni emphasized seeking out mentors both at work and through professional associations. They also recommended networking with alumni from our program, reaching out cold via LinkedIn or email.\n\n In terms of finding that first job, alumni advised students to cast a wide net and apply broadly. Though it can be challenging to get your foot in the door, once you secure that first data science role, doors continue opening in the future. When evaluating job offers, consider opportunities for growth and learning.\n\n We are proud of our accomplished alumni and thank them for giving back to the data science club. Their journey demonstrates the breadth of career paths enabled by a data science education. For current students, their insights help prepare us for the next step after graduation.",
     date: "August 21, 2023",
     imageUrl: "/images/misc-events/alumni-august-2023-ss0.png",
