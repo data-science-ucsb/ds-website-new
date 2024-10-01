@@ -17,6 +17,7 @@ export const resourceOptions = {
     pages: [
         {name: "Events", link: "/events"},
         {name: "Career Fair", link: "/career-fair"},
+        {name: "Big Little", link: "/big-little"},
         {name: "Projects", link: "/projects"}
     ]
 };

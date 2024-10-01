@@ -23,7 +23,7 @@ function CareerFair() {
         After registering on Eventbrite, you can expect to hear back from us within a week regarding the next steps. In the follow-up email, we will provide all the necessary information for company representatives to select the number of representatives you would like to bring and your available time frames. Please note that you are allowed to change your selected timeslots and the number of representatives attending until 11:59 PM on September 27th, the registration deadline. The actual event will be held completely on Zoom.
 
         <br/> <br></br>
-        <Link target="_blank" href="https://www.eventbrite.com/e/2024-data-science-ucsb-career-fair-tickets-934194068607?aff=oddtdtcreator" className="font-medium text-gray-900 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Register Now</Link>
+        <Link target="_blank" href="https://forms.gle/hxXgttJwRfh4q2fMA" className="font-medium text-gray-900 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Register Now</Link>
         <br></br> <br></br>
         
         Please contact datascience.ucsb@gmail.com if there are any questions or concerns.
