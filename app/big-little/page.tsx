@@ -11,12 +11,12 @@ const BigLittle = () => {
 
         <div className="flex justify-center">
           <Image 
-            src="/images/careerfair24/2024-career-fair-logo.png"
-            alt="2024 Data Science UCSB Career Fair"
+            src="/images/blog2022-23/f22-big-little-family-reveal.jpg"
+            alt="Big Little Program"
             width={600}
             height={400}
           />
-        </div>
+        </div> <br/>
         
         <p className="text-base md:text-lg lg:text-xl leading-7 mx-auto">
         Data Science UCSB is offering a Big Little program where Bigs can mentor littles with career interests,
