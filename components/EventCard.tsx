@@ -7,10 +7,8 @@ import Modal from "./Modal";
 interface Event {
   title: string;
   description: string;
-  longDescription: string;
   date: string;
   imageUrl: string;
-  expandedImage: string;
 }
 
 const imageHeight = 200;

@@ -40,14 +40,12 @@ const events = [
   {
     title: "Alumni August 2024",
     description: "We hosted our annual Alumni August event where they shared valuable career experience!",
-    longDescription: "We hosted our annual Alumni August event where they shared valuable career experience!",
     date: "August 22, 2024",
     imageUrl: "/images/blog2024-25/alumni-august-2024.png",
   },
   {
     title: "Fall 2024 Data Science UCSB Career Fair",
     description: "We're going to host our 3rd annual Data Science UCSB Career Fair!",
-    longDescription: "We will host this event virtually on October 25, 2024 from 10am-4pm. For more details about event logistics and pricing, go to the Career Fair tab!",
     date: "October 25, 2024",
     imageUrl: "/images/careerfair24/2024-career-fair-logo.png",
     expandedImage: "/images/careerfair24/2024-career-fair-logo.png"
