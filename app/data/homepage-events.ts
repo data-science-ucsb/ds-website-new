@@ -15,7 +15,7 @@ const homepageEvents = [
   },
   {
     title: "Meeting Times and Locations",
-    description: "Weekly project meetings Thursday 7-8pm",
+    description: "Workshops Tuesdays 7-9pm @ TD-W 1701",
     imageUrl: "/images/kickoff.jpg",
   },
   {
