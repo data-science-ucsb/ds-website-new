@@ -114,7 +114,7 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     linkedIn: "https://www.linkedin.com/in/makala-mesina-forester-617013272/"
   },
   {
-    name: "Hsin-Ni Yen",
+    name: "Nini Yen",
     role: "Director of Operations",
     major: "Statistics & Data Science",
     position: "Software Engineer Intern @ HopeKCC",
