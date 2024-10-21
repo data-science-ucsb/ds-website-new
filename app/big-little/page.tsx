@@ -18,13 +18,13 @@ const BigLittle = () => {
           />
         </div> <br/>
         
-        <p className="text-base md:text-lg lg:text-xl leading-7 mx-auto">
+        <p className="text-base md:text-lg">
         Data Science UCSB is offering a Big Little program where Bigs can mentor littles with career interests,
         bond by doing mutual hobbies, and explore around campus together! The requirement to be a big is being
         at least an upperclassman or prior involvement the club, and anyone can sign up to be a little (especially
         freshmen and sophomores)! Register below!
         </p> <br/>
-        <Link target="_blank" href="https://forms.gle/cDJMnX3swHBjc1YW8" className="font-medium text-gray-900 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Register Now</Link>
+        <Link target="_blank" href="https://forms.gle/t8RjukoodSKDpH5T9" className="font-medium text-gray-900 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full">Register Now</Link>
         
       </div>
   )
