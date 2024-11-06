@@ -12,7 +12,7 @@ const SponsorsSection = () => {
           {sponsors.map((sponsor) => (
             <div
               key={sponsor.name}
-              className="col-span-1 flex justify-center items-center"
+              className="col-span-2 flex justify-center items-center"
             >
               <Image
                 src={sponsor.imageUrl}
