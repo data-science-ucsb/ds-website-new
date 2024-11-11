@@ -2,6 +2,12 @@ import { description } from "./siteMetadata";
 
 const events = [
   {
+    title: "DS x Gaucho Racing Bonfire Social",
+    description: "We collaborated with Gaucho Racing to host a bonfire social and eat some nice s'mores!",
+    date: "November 8, 2024",
+    imageUrl: "/images/blog2024-25/bonfire.jpg"
+  },
+  {
     title: "Undergrad Research Panel",
     description: "We held an undergraduate research panel featuring Daniel Naylor, Pariya Akhiani, Jiaxin Su, and Henry McMahon! They shared very valuable advice for getting into research!",
     date: "November 5, 2024",
