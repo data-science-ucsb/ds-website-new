@@ -27,7 +27,7 @@ export const executiveTeam: BoardMember[] = [
     position: "UCSB CLAS Math Tutor",
     interests: "Applied Math, Stats, ML, CS, Research",
     bio: "I’m a CCS student interested in mathematics. My focus is largely applied math, especially in fields such as statistics, machine learning, and computer science. I have a passion for both learning and teaching, having worked extensively as a tutor, and I plan on applying these skills in applied math research throughout the coming school years.",
-    imageUrl: "/images/board/daniel-naylor.jpg",
+    imageUrl: "/images/board/daniel-naylor.png",
     linkedIn: "https://www.linkedin.com/in/daniel-t-naylor/"
   },
   {
@@ -52,16 +52,6 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     bio: "Hi, I’m Sam, and I’m thrilled to serve as the Director of Prof Dev for the upcoming year! Data Science UCSB has been a transformative experience in my college career, igniting my passion for giving back to our community through human-centric approaches that drive valuable impact. I’m excited to meet all the members and collaborate on awesome data-related projects! Feel free to reach out on Discord or Instagram if you’d like to chat!",
     imageUrl: "/images/board/samantha-su.png",
     linkedIn: "https://www.linkedin.com/in/samanthasu516/"
-  },
-  {
-    name: "Winbert Zhang",
-    role: "Director of Finance",
-    major: "Computer Science",
-    position: "Software Engineer Intern @ Vitu",
-    interests: "Cooking, hiking, board games",
-    bio: "Hi everyone, I’m a 4th year Computer Science major from the Bay Area. Some of my hobbies include cooking, hiking, and board games. I joined Data Science club to learn more about data science and join a community of friendly and curious people with similar interests.",
-    imageUrl: "/images/board/winbert-zhang.jpg",
-    linkedIn: "https://www.linkedin.com/in/winbert/"
   },
   {
     name: "Lance Sanchez",
@@ -115,7 +105,7 @@ export const marketingAndOperationsTeam: BoardMember[] = [
   },
   {
     name: "Nini Yen",
-    role: "Director of Operations",
+    role: "Director of Finance",
     major: "Statistics & Data Science",
     position: "Software Engineer Intern @ HopeKCC",
     interests: "Hiking, playing piano, listening to music",
