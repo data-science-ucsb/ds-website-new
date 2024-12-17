@@ -158,7 +158,7 @@ export const techDevTeam: BoardMember[] = [
   },
   {
     name: "Clement Boiteux",
-    role: "Director of Web Development",
+    role: "Webmaster",
     major: "Computer Engineering",
     position: "IT Intern @ PolyPlus Battery Company",
     interests: "Watching movies, playing 8-ball, biking",
