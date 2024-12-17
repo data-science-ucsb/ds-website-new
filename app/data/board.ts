@@ -34,10 +34,10 @@ export const executiveTeam: BoardMember[] = [
     name: "Srinidhi Sathish",
     role: "External Vice President",
     major: "Statistics & Data Science",
-    position: "Intern @ Contentstack",
+    position: "Business Analytics Intern @ Contentstack",
     interests: "Hiking, Soccer, Reading",
     bio: "Hi! I’m a 3rd year Statistics & Data Science major from San Jose. I joined the club in order to develop my data science skills, work on projects, and be a part of a friendly and supportive community. In my free time, I enjoy hiking, playing soccer, and reading!",
-    imageUrl: "/images/board/srinidhi-sathish.jpg",
+    imageUrl: "/images/board/srinidhi-sathish.png",
     linkedIn: "https://www.linkedin.com/in/srinidhi-sathish-44457625b/"
   },
 ];
