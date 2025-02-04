@@ -6,6 +6,7 @@ const headerNavLinks = [
   { href: "/faq", title: "FAQ" },
   { href: "/alumni", title: "Alumni" },
   { href: "/about", title: "Officers" },
+  { href: "/calendar", title: "Calendar" },
   { href: "https://forms.gle/pNMYNddP5mbNUYmJ7", title: "Register"}
 ];
 
