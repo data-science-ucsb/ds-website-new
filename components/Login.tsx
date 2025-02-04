@@ -10,7 +10,7 @@ const Login = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:5000/api/users/login', {
@@ -23,7 +23,7 @@ const Login = () => {
             
             // Redirect to dashboard
             navigate('/dashboard');
-        } catch (err) {
+        } catch (err: any) {
             setError(err.response?.data?.error || 'An error occurred');
         }
     };
