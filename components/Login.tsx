@@ -1,32 +1,42 @@
 "use client";
 
-import { useState } from 'react';
-import axios from 'axios';
+import { useAuth0 } from '@auth0/auth0-react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const { loginWithRedirect, isAuthenticated, isLoading, user } = useAuth0();
     const navigate = useNavigate();
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        try {
-            const response = await axios.post('http://localhost:5000/api/users/login', {
-                email,
-                password
-            });
-            
-            // Store token in localStorage
-            localStorage.setItem('token', response.data.token);
-            
-            // Redirect to dashboard
-            navigate('/dashboard');
-        } catch (err: any) {
-            setError(err.response?.data?.error || 'An error occurred');
+    useEffect(() => {
+        const verifyMembership = async () => {
+            if (isAuthenticated && user?.email) {
+                try {
+                    const response = await fetch('/api/verify-membership', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ email: user.email }),
+                    });
+
+                    const data = await response.json();
+
+                    if (data.isMember) {
+                        navigate('/dashboard');
+                    } else {
+                        window.location.href = data.redirect;
+                    }
+                } catch (error) {
+                    console.error('Error verifying membership:', error);
+                }
+            }
+        };
+
+        if (!isLoading && isAuthenticated) {
+            verifyMembership();
         }
-    };
+    }, [isAuthenticated, isLoading, navigate, user]);
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -35,49 +45,21 @@ const Login = () => {
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                         Sign in to your account
                     </h2>
+                    <p className="mt-2 text-center text-sm text-gray-600">
+                        You must be a registered club member to access resources
+                    </p>
                 </div>
-                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-                    {error && (
-                        <div className="rounded-md bg-red-50 p-4">
-                            <div className="text-sm text-red-700">{error}</div>
-                        </div>
-                    )}
-                    <div className="rounded-md shadow-sm -space-y-px">
-                        <div>
-                            <input
-                                type="email"
-                                required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                placeholder="Email address"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </div>
-                        <div>
-                            <input
-                                type="password"
-                                required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                placeholder="Password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                        </div>
-                    </div>
-
-                    <div>
-                        <button
-                            type="submit"
-                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        >
-                            Sign in
-                        </button>
-                    </div>
-                </form>
+                <div>
+                    <button
+                        onClick={() => loginWithRedirect()}
+                        className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                        Sign in with Auth0
+                    </button>
+                </div>
             </div>
         </div>
     );
 };
 
 export default Login;
-
