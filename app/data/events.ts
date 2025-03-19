@@ -27,7 +27,7 @@ const events = [
   },
   {
     title: "Intern Panel",
-    description: "We hosted a panel featuring Tanay Biradar, Edizon Chang, Sarah Lew, Irena Wong, and Anu Maddali to talk about their internship experience!",
+    description: "We hosted a panel featuring Tanay Biradar, Edison Zhang, Sarah Lew, Irena Wong, and Anu Maddali to talk about their internship experience!",
     date: "October 15, 2024",
     imageUrl: "/images/blog2024-25/intern-panel.jpg"
   },
