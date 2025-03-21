@@ -2,6 +2,18 @@ import { description } from "./siteMetadata";
 
 const events = [
   {
+    title: "DS x ACM x GSAC Dataorbit 2025",
+    description: "We hosted our annual datathon, Dataorbit 2025, in collaboration with ACM @ UCSB and Gaucho Sports Analytics Club! It was a great success with over 200 participants!",
+    date: "February 23, 2025",
+    imageUrl: "/images/blog2024-25/datathon25.jpeg"
+  },
+  {
+    title: "Al Yuen Career Navigation Talk",
+    description: "Al Yuen visited us to give us his valuable advice on advancing in your tech career and starting startups!",
+    date: "January 28, 2025",
+    imageUrl: "/images/blog2024-25/al-yuen.JPG"
+  },
+  {
     title: "DS x Gaucho Racing Bonfire Social",
     description: "We collaborated with Gaucho Racing to host a bonfire social and eat some nice s'mores!",
     date: "November 8, 2024",
