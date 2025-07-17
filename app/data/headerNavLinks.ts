@@ -7,7 +7,7 @@ const headerNavLinks = [
   { href: "/alumni", title: "Alumni" },
   { href: "/about", title: "Officers" },
   { href: "/calendar", title: "Calendar" },
-  { href: "https://forms.gle/pNMYNddP5mbNUYmJ7", title: "Register"}
+  { href: "/register", title: "Register"}
 ];
 
 export default headerNavLinks;

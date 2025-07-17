@@ -7,7 +7,7 @@ export default function LogoAnimation() {
       <div className="logo">
         {/* replace with gif when created
         <img src="/logo-animation.gif" alt="Logo Animation" className="logo-image" /> */}
-        <img src="/logo.png" alt="Logo Animation" className="logo-image" />
+        <img src="/logo.png" alt="Logo Animation" className="animate-spin-fast logo-image" />
       </div>
     </div>
   );

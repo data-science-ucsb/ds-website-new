@@ -18,19 +18,12 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <div className="">
               <Image
-                src={"/logo.png"}
+                src={"/images/datasciencelogotransparent.png"}
                 alt="Data Science Logo" 
-                width={100}
-                height={100}
-              ></Image>
+                width={250} 
+                height={250} 
+              />
             </div>
-            {typeof siteMetadata.headerTitle === "string" ? (
-              <div className="hidden h-6 text-2xl font-semibold sm:block">
-                {siteMetadata.headerTitle}
-              </div>
-            ) : (
-              siteMetadata.headerTitle
-            )}
           </div>
         </Link>
       </div>
@@ -43,8 +36,12 @@ const Header = () => {
             <Link
               key={link.title}
               href={link.href}
-              className={link.title === "Register" ? "hidden font-medium text-gray-900  sm:block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full" : "hidden font-medium text-gray-900  sm:block"}
-            >{link.title}</Link>
+              className="hidden sm:block relative overflow-hidden font-medium text-white py-2 px-4 rounded-full bg-blue-500 group"
+            >
+             
+              <span className="absolute inset-y-0 left-0 w-0 bg-blue-700 transition-all duration-300 ease-out group-hover:w-full" />
+              <span className="relative z-10">Join Us!</span>
+            </Link>
           ))}
         <MobileNav />
       </div>
