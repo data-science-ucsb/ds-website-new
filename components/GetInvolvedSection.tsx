@@ -49,7 +49,7 @@ export default function GetInvolvedSection() {
     { label: "Projects", value: 100, duration: 4 },
   ];
 
-  const refs = stats.map(() => useInView({ triggerOnce: true }));
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <div className="container mx-auto my-16 px-4">
@@ -71,26 +71,22 @@ export default function GetInvolvedSection() {
         id="next-section"
         className="container mx-auto my-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
       >
-        {stats.map((stat, index) => {
-          const { ref, inView } = refs[index];
-
-          return (
-            <div key={index} className="flex flex-col items-center" ref={ref}>
-              {inView && (
-                <div className="flex items-center">
-                  <CountUp
-                    start={0}
-                    end={stat.value}
-                    duration={stat.duration}
-                    className="text-4xl font-extrabold text-blue-500"
-                  />
-                  <span className="text-4xl font-extrabold text-yellow-500">+</span>
-                </div>
-              )}
-              <p className="text-lg font-medium text-gray-700 mt-2">{stat.label}</p>
-            </div>
-          );
-        })}
+        {stats.map((stat, index) => (
+          <div key={index} className="flex flex-col items-center" ref={ref}>
+            {inView && (
+              <div className="flex items-center">
+                <CountUp
+                  start={0}
+                  end={stat.value}
+                  duration={stat.duration}
+                  className="text-4xl font-extrabold text-blue-500"
+                />
+                <span className="text-4xl font-extrabold text-yellow-500">+</span>
+              </div>
+            )}
+            <p className="text-lg font-medium text-gray-700 mt-2">{stat.label}</p>
+          </div>
+        ))}
       </div>
 
       <div className="relative text-center mt-8">

@@ -9,7 +9,6 @@ interface BoardProfileCardProps {
   major: string;
   position: string;
   interests: string;
-  bio: string;
   imageUrl: string;
   linkedIn: string;
 }
@@ -20,7 +19,6 @@ export const BoardProfileCard = ({
   major,
   position,
   interests,
-  bio,
   imageUrl,
   linkedIn,
 }: BoardProfileCardProps) => {
