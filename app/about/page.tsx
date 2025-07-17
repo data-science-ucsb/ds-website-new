@@ -21,9 +21,8 @@ const AboutPage = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {allMembers.map((member, index) => (
-          <div className="w-full max-w-[500px] mx-auto">
+          <div key={index} className="w-full max-w-[500px] mx-auto">
             <BoardProfileCard
-              key={index}
               name={member.name}
               role={member.role}
               major={"🎓 " + member.major}
