@@ -21,6 +21,8 @@ import Link from "@/components/Link"
 import headerNavLinks from "@/app/data/headerNavLinks"
 
 
+
+
 export default function Home() {
   const [showAnimation, setShowAnimation] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0); 
@@ -85,7 +87,7 @@ export default function Home() {
           </motion.p>
           <div className="mt-6 flex space-x-4">
             <Link
-              href="/register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSci2ESDwDNfs2gEKbiTDDUvxlsSSWwTMnS80d1s2q3nJ9k_FA/viewform?usp=dialog"
               className="relative overflow-hidden font-medium text-white py-2 px-4 rounded-full bg-blue-500 group"
             >
               <span className="absolute inset-y-0 left-0 w-0 bg-blue-700 rounded-full transition-all duration-300 ease-out group-hover:w-full" />
@@ -96,6 +98,7 @@ export default function Home() {
               onClick={() => {
                 const missionSection = document.querySelector("#mission-section");
                 missionSection?.scrollIntoView({ behavior: "smooth", block: "center" });
+                
               }}
               className="font-medium text-gray-700 py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 transition-all duration-300"
             >
