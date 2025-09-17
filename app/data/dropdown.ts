@@ -6,7 +6,7 @@ export interface DropdownProps {
 export const aboutOptions = {
     primaryName: "About",
     pages: [
-        {name: "Officers", link: "/about"}, 
+        //{name: "Officers", link: "/about"}, 
         {name: "Alumni", link: "/alumni"},
         {name: "FAQ", link: "/faq"}
     ]
