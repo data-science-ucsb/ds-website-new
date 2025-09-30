@@ -87,7 +87,7 @@ export default function Home() {
           </motion.p>
           <div className="mt-6 flex space-x-4">
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSci2ESDwDNfs2gEKbiTDDUvxlsSSWwTMnS80d1s2q3nJ9k_FA/viewform?usp=dialog"
+              href="https://tinyurl.com/DS-2526"
               className="relative overflow-hidden font-medium text-white py-2 px-4 rounded-full bg-blue-500 group"
             >
               <span className="absolute inset-y-0 left-0 w-0 bg-blue-700 rounded-full transition-all duration-300 ease-out group-hover:w-full" />
