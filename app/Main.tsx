@@ -62,7 +62,7 @@ export default function Home() {
         className="fixed top-0 left-0 h-1 bg-blue-500 z-50"
       ></div>
 
-      <div className="top-0 left-0 right-0 z-40 pointer-events-none">
+      <div className="top-0 left-0 right-0 z-40 pointer-events-auto">
         <TopGlassBanner
           href="https://tinyurl.com/DS-2526"
           dateLabel="Oct 01"
