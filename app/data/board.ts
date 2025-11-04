@@ -24,7 +24,7 @@ export const executiveTeam: BoardMember[] = [
     major: "Computer Science",
     position: "",
     interests: "",
-    imageUrl: "/images/board/Mitali-Gaidhani.jpg",
+    imageUrl: "/images/board/mitalinew.jpg",
     linkedIn: "https://www.linkedin.com/in/mitali-gaidhani/"
   },
   {
@@ -33,7 +33,7 @@ export const executiveTeam: BoardMember[] = [
     major: "Statistics & Data Science",
     position: "",
     interests: "",
-    imageUrl: "/images/board/Aakash-Senthilnathan.jpg",
+    imageUrl: "/images/board/AakashS.jpg",
     linkedIn: "https://www.linkedin.com/in/aakashsenthilnathan/"
   },
   {
@@ -54,7 +54,7 @@ export const techDevTeam: BoardMember[] = [
     major: "Computer Engineering",
     position: "",
     interests: "",
-    imageUrl: "/images/board/clement-boiteux.png",
+    imageUrl: "/images/board/clementnew.jpg",
     linkedIn: "https://www.linkedin.com/in/clement-boiteux/"
   },
   {
@@ -84,16 +84,26 @@ export const techDevTeam: BoardMember[] = [
     imageUrl: "/images/board/Kishan-Goli.jpeg",
     linkedIn: "https://www.linkedin.com/in/kishangoli/"
   },
+  
 ];
 
 export const marketingAndOperationsTeam: BoardMember[] = [
+  {
+    name: "Satvik Talchuru",
+    role: "Director of Operations",
+    major: "Statistics & Data Science, Economics",
+    position: "",
+    interests: "",
+    imageUrl: "/images/board/Satvik-Talchuru.png",
+    linkedIn: "https://www.linkedin.com/in/satviktalchuru/"
+  },
   {
     name: "Nini Yen",
     role: "Director of Professional Development",
     major: "Computer Science",
     position: "",
     interests: "",
-    imageUrl: "/images/board/Nini-Yen.jpeg",
+    imageUrl: "/images/board/Nini-Yen.jpg",
     linkedIn: "https://www.linkedin.com/in/hsin-ni-yen/"
   },
   {
@@ -102,7 +112,7 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     major: "Statistics & Data Science",
     position: "",
     interests: "",
-    imageUrl: "/images/board/rachna-bokka.png",
+    imageUrl: "/images/board/rachnanew.jpg",
     linkedIn: "https://www.linkedin.com/in/rachna-bokka-406a04229/"
   },
   {
