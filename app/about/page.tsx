@@ -26,8 +26,8 @@ const AboutPage = () => {
               name={member.name}
               role={member.role}
               major={"🎓 " + member.major}
-              position={"💼 " + member.position}
-              interests={"😀 " + member.interests}
+              position={""}
+              interests={""}
               imageUrl={member.imageUrl}
               linkedIn={member.linkedIn}
             />
