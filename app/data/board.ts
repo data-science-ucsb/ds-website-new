@@ -81,7 +81,7 @@ export const techDevTeam: BoardMember[] = [
     major: "Statistics & Data Science",
     position: "",
     interests: "Poker, Music",
-    imageUrl: "/images/board/Kishan-Goli.jpeg",
+    imageUrl: "/images/board/kishannew.png",
     linkedIn: "https://www.linkedin.com/in/kishangoli/"
   },
   
@@ -103,7 +103,7 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     major: "Computer Science",
     position: "",
     interests: "",
-    imageUrl: "/images/board/Nini-Yen.jpg",
+    imageUrl: "/images/board/nininew.png",
     linkedIn: "https://www.linkedin.com/in/hsin-ni-yen/"
   },
   {
