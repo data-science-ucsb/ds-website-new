@@ -25,20 +25,25 @@ export const BoardProfileCard = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <a href={linkedIn} target="_blank" className="max-h-200 w-25 p-4">
-      <div className="flex flex-col items-center rounded-lg bg-white p-4 shadow-lg hover:-translate-y-1 hover:scale-100 hover:bg-blue-600 hover:text-stone-50 duration-300 h-100 overflow-hidden">
-        <div className="w-48 h-48 relative overflow-hidden rounded-full mb-2">      
-          <Image
-            src={imageUrl}
-            alt={name}
-            fill
-          />
+    <a href={linkedIn} target="_blank" className="max-h-200 w-25 p-4 block">
+      <div className="relative group">
+        {/* Animated gradient border */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 rounded-lg blur-sm opacity-50 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+        
+        {/* Card content */}
+        <div className="relative flex flex-col items-center rounded-lg bg-white p-6 shadow-lg hover:-translate-y-1 hover:scale-105 duration-300 h-full">
+          <div className="w-48 h-48 relative overflow-hidden rounded-full mb-4 ring-4 ring-blue-100 group-hover:ring-blue-300 transition-all duration-300">      
+            <Image
+              src={imageUrl}
+              alt={name}
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <p className="md:font-bold text-center text-lg">{name}</p>
+          <p className="text-center text-gray-600 mb-2">{role}</p>
+          <p className="text-center text-sm text-gray-500">{major}</p>
         </div>
-        <p className="md:font-bold">{name}</p>
-        <p>{role}</p> <br/>
-        <p>{major}</p>
-        <p>{position}</p>
-        <p>{interests}</p>
       </div>
     </a>
   );
