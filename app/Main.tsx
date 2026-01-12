@@ -20,6 +20,7 @@ import CountUp from "react-countup";
 import Link from "@/components/Link"
 import headerNavLinks from "@/app/data/headerNavLinks"
 import TopGlassBanner from "@/components/TopGlassBanner";
+import Data4GoodModal from "@/components/Data4GoodModal";
 
 
 
@@ -56,6 +57,8 @@ export default function Home() {
 
   return (
     <>
+      {/* Data4Good Modal */}
+      <Data4GoodModal />
       
       <div
         style={{ width: `${scrollProgress}%` }}
@@ -64,9 +67,9 @@ export default function Home() {
 
       <div className="top-0 left-0 right-0 z-40 pointer-events-auto">
         <TopGlassBanner
-          href="https://tinyurl.com/DS-2526"
+          href="https://datathon.datascienceucsb.org"
           dateLabel="Oct 01"
-          message="Our registration for 2025-2026 is now open! "
+          message="Our annual datathon in 2026 is coming up! "
           cta="Register Here"
           // optional: tweak margins/width from here
           className="mt-3"
