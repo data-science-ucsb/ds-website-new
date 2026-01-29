@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Slider from "react-slick"; 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+// import Slider from "react-slick"; 
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css"; 
 import LogoAnimation from "@/components/LogoAnimation";
 import HomepageEventsSection from "@/components/HomepageEventsSection";
 import SponsorsSection from "@/components/SponsorsSection";
 import events from "@/app/data/homepage-events";
-import galleryImages from "@/components/HomepageGallery"; 
+// import galleryImages from "@/components/HomepageGallery"; 
 import GetInvolvedSection from "@/components/GetInvolvedSection";
 import WhereWeWorkSection from "@/components/WhereWeWorkSection";
 import AlternatingSection from "@/components/AlternatingSection"; 
