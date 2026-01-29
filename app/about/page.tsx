@@ -19,9 +19,11 @@ const AboutPage = () => {
       <h1 className="text-4xl font-bold text-center mb-12">
         Meet the Data Science UCSB Officers
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {/* Using Flexbox instead of Grid to center last row items */}
+      <div className="flex flex-wrap justify-center gap-8">
         {allMembers.map((member, index) => (
-          <div key={index} className="w-full max-w-[500px] mx-auto">
+          <div key={index} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[400px]">
             <BoardProfileCard
               name={member.name}
               role={member.role}
@@ -34,14 +36,7 @@ const AboutPage = () => {
           </div>
         ))}
       </div>
-
-      
-
     </div>
-
-
-
-    
   );
 };
 

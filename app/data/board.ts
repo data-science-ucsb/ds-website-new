@@ -160,6 +160,33 @@ export const marketingAndOperationsTeam: BoardMember[] = [
     imageUrl: "/images/board/Catherine-Li.jpg",
     linkedIn: "https://www.linkedin.com/in/catherineliyin/"
   },
+  {
+    name: "John Yang",
+    role: "Technical Development Intern",
+    major: "Computer Science",
+    position: "",
+    interests: "",
+    imageUrl: "/images/board/johnyang.jpg",
+    linkedIn: "https://www.linkedin.com/in/john-yang-006769243/"
+  },
+  {
+    name: "Rylie Rice",
+    role: "Events Intern",
+    major: "Actuarial Science",
+    position: "",
+    interests: "",
+    imageUrl: "/images/board/rylierice.jpg",
+    linkedIn: ""
+  },
+  {
+    name: "Qixuan Lin",
+    role: "Outreach Intern",
+    major: "Psych & Brain Sciences",
+    position: "",
+    interests: "",
+    imageUrl: "/images/board/qixuanlin.jpeg",
+    linkedIn: "https://www.linkedin.com/in/qixuan-lin-1aa09a246/"
+  },
 ];
 
 export const boardMembers = [
