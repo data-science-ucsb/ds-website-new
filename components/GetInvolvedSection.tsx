@@ -38,7 +38,7 @@ export default function GetInvolvedSection() {
       description:
         "Compete to solve real-world problems using data science, with industry executives and big tech companies in attendance!",
       image: "/images/datathon1.jpg",
-      link: "https://dataorbit.info/",
+      link: "https://datathon.datascienceucsb.org",
     },
   ];
 
