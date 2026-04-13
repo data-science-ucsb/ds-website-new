@@ -85,12 +85,12 @@ export default function Home() {
       >
         <div className="flex-1">
           <motion.h1
-            className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+            className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Welcome to Data Science UCSB!
+            Welcome to Data Science Club @ UCSB!
           </motion.h1>
           <motion.p
             className="text-lg leading-7 text-gray-500 mt-2"
