@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       {/* Data4Good Modal */}
-      <Data4GoodModal />
+      {/* <Data4GoodModal /> Commented out but can be brought back next year - April 2026 */}
       
       <div
         style={{ width: `${scrollProgress}%` }}
@@ -67,10 +67,10 @@ export default function Home() {
 
       <div className="top-0 left-0 right-0 z-40 pointer-events-auto">
         <TopGlassBanner
-          href="https://datathon.datascienceucsb.org"
-          dateLabel="Oct 01"
-          message="Our annual datathon in 2026 is coming up! "
-          cta="Register Here"
+          href="https://tinyurl.com/DS-Board-26-27"
+          dateLabel="April 27"
+          message="Our board applications for 2026-2027 is now open! "
+          cta="Apply Here"
           // optional: tweak margins/width from here
           className="mt-3"
         />

@@ -29,14 +29,14 @@ const Header = () => {
       </div>
       <div className="flex items-center space-x-2 leading-5 sm:space-x-1">
         {/* Data4Good Glowing Button */}
-          <a
+          {/* <a
             href="https://datathon.datascienceucsb.org"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center px-4 py-2 font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-full relative overflow-hidden group animate-pulse-glow hover:scale-105 transition-transform"
           >
             <span className="relative z-10">Data4Good</span>
-          </a>
+          </a> */}
           <Dropdown primaryName={resourceOptions.primaryName} pages={resourceOptions.pages}/>
           <Dropdown primaryName={aboutOptions.primaryName} pages={aboutOptions.pages} />
           
