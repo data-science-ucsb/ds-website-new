@@ -1,45 +1,43 @@
-// export interface Product {
-//     id: string;
-//     name: string;
-//     description: string;
-//     price: number;
-//     image: string;
-//     category: 'merchandise' | 'membership' | 'bundle';
-//     quantity?: number; // implement in Firebase
-//     inStock?: boolean; // implement in Firebase
-//   }
-  
-//   export const products: Product[] = [
-//     {
-//       id: 'ds-shirt-2024',
-//       name: 'Data Science UCSB Shirt',
-//       description: 'Official Data Science UCSB club t-shirt featuring our logo and design.',
-//       price: 15.00,
-//       image: '/images/ds-shirt.jpg',
-//       category: 'merchandise',
-//     },
-//     {
-//       id: 'ds-membership-2024',
-//       name: 'Data Science UCSB Membership',
-//       description: 'Annual membership to Data Science UCSB. Includes access to exclusive events, workshops, and networking opportunities.',
-//       price: 20.00,
-//       image: '/images/ds-membership.jpg',
-//       category: 'membership',
-//     },
-//     {
-//       id: 'ds-bundle-2024',
-//       name: 'Shirt + Membership Bundle',
-//       description: 'Get both the official DS UCSB shirt and annual membership at a discounted price.',
-//       price: 30.00,
-//       image: '/images/ds-bundle.jpg',
-//       category: 'bundle'
-//     }
-//   ];
-  
-//   export const getProductById = (id: string): Product | undefined => {
-//     return products.find(product => product.id === id);
-//   };
-  
-//   export const getProductsByCategory = (category: Product['category']): Product[] => {
-//     return products.filter(product => product.category === category);
-//   };
+import type { Product } from "@/types/ecommerce";
+
+export const products: Product[] = [
+  {
+    id: "ds-shirt-2026",
+    name: "DS UCSB Club Tee",
+    description:
+      "Soft everyday club t-shirt for pickup at a general meeting.",
+    price: 18,
+    image: "/images/25-26-tshirt.jpg",
+    category: "merchandise",
+    inventory: 150,
+    inStock: true,
+  },
+  {
+    id: "ds-membership-2026",
+    name: "2026 Member Pass",
+    description:
+      "Annual membership with priority access to club events and merch drops. Ends at the end of the 26-27 school year.",
+    price: 20,
+    image: "/logo.png",
+    category: "membership",
+    inventory: 500,
+    inStock: true,
+  },
+  {
+    id: "ds-bundle-2026",
+    name: "Tee + Membership Bundle",
+    description:
+      "Bundle pricing for one club tee and the 2026 member pass.",
+    price: 34,
+    image: "/images/homepage.png",
+    category: "bundle",
+    inventory: 120,
+    inStock: true,
+  },
+];
+
+export const productsById = new Map(products.map((product) => [product.id, product]));
+
+export function getProductById(id: string) {
+  return productsById.get(id);
+}

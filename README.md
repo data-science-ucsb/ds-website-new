@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Store / Ecommerce
+
+The merch store includes a guest cart, quantity-aware product cards, checkout throttling, and pickup-only order creation. Payments are verified separately and confirmation email is handled by the club's Google Apps Script.
+
+Quick architecture notes live in [docs/ecommerce.md](/C:/Users/ezrab/OneDrive/Desktop/GitHub/ds-website-new/docs/ecommerce.md:1).
+
+Full setup and testing instructions live in [docs/ecommerce-runbook.md](/C:/Users/ezrab/OneDrive/Desktop/GitHub/ds-website-new/docs/ecommerce-runbook.md:1).
+
 ## Getting Started
 
 First, run the development server:

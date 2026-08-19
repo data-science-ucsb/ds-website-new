@@ -6,7 +6,6 @@ import Link from "./Link";
 import Image from "next/image";
 import MobileNav from "./MobileNav";
 import Dropdown from "./Dropdown";
-import { useState } from "react";
 import { aboutOptions, resourceOptions } from "@/app/data/dropdown";
 
 const Header = () => {
@@ -27,7 +26,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="flex items-center space-x-2 leading-5 sm:space-x-1">
+      <div className="flex items-center gap-2 leading-5 sm:gap-1">
         {/* Data4Good Glowing Button */}
           {/* <a
             href="https://datathon.datascienceucsb.org"
@@ -39,9 +38,20 @@ const Header = () => {
           </a> */}
           <Dropdown primaryName={resourceOptions.primaryName} pages={resourceOptions.pages}/>
           <Dropdown primaryName={aboutOptions.primaryName} pages={aboutOptions.pages} />
-          
-          
-          
+
+          {headerNavLinks
+          .filter((link) => link.title === "Store")
+          .map((link) => (
+            <Link
+              key={link.title}
+              href={link.href}
+              className="group relative ml-3 mr-8 hidden overflow-hidden rounded-full border border-blue-500 px-4 py-2 font-medium text-blue-700 transition hover:text-white sm:block"
+            >
+              <span className="absolute inset-y-0 left-0 w-0 bg-blue-500 transition-all duration-300 ease-out group-hover:w-full" />
+              <span className="relative z-10">Store</span>
+            </Link>
+          ))}
+
           {headerNavLinks
           .filter((link) => link.title === "Register")
           .map((link) => (

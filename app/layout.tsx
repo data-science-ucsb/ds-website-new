@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import siteMetadata from "@/app/data/siteMetadata";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import SectionContainer from "@/components/SectionContainer";
 import { inter } from "./fonts";
+import { CartProvider } from "@/components/CartProvider";
 
 export const metadata: Metadata = {
   title: "UCSB Data Science Club",
@@ -19,15 +21,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       suppressHydrationWarning
     >
       <body className="">
-        <div className="bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
-          <SectionContainer>
-            <div className="flex flex-col justify-between min-h-screen">
-              <Header />
-              <main className="mb-auto">{children}</main>
-              <Footer />
-            </div>
-          </SectionContainer>
-        </div>
+        <CartProvider>
+          <div className="bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
+            <SectionContainer>
+              <div className="flex flex-col justify-between min-h-screen">
+                <Header />
+                <main className="mb-auto">{children}</main>
+                <Footer />
+              </div>
+            </SectionContainer>
+          </div>
+          <Toaster
+            position="top-right"
+            toastOptions={{ duration: 5000, removeDelay: 500 }}
+          />
+        </CartProvider>
       </body>
     </html>
   );
