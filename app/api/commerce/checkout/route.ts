@@ -10,7 +10,7 @@ import type {
   OrderRecord,
 } from "@/types/ecommerce";
 
-const pickupLocation = "TD-W 1700";
+const pickupLocation = "TD-W 1701";
 const paymentMethods: CheckoutPaymentMethod[] = ["zelle", "cash", "venmo"];
 
 function isPaymentMethod(value: unknown): value is CheckoutPaymentMethod {
