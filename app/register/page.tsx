@@ -14,7 +14,7 @@ const Register = () => {
             /> */}
         </div> <br></br>
         <p className='text-center'>
-        Thanks for your interest! Follow our <Link href={"https://www.instagram.com/datascienceucsb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="} className='text-blue-600'>Instagram page</Link> (@datascienceucsb) to stay tuned for our 2025-26 
+        Thanks for your interest! Follow our <Link href={"https://www.instagram.com/datascienceucsb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="} className='text-blue-600'>Instagram page</Link> (@datascienceucsb) to stay tuned for our 2026-27 
         member registration as Fall quarter starts! 
         </p>
     </div>

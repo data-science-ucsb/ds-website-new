@@ -8,7 +8,7 @@ const headerNavLinks = [
   { href: "/alumni", title: "Alumni" },
   { href: "/about", title: "Officers" },
   { href: "/calendar", title: "Calendar" },
-  { href: "https://tinyurl.com/DS-2526", title: "Register"}
+  { href: "https://forms.gle/cBc4iRwiSMDfjfpf9", title: "Register"}
 ];
 
 export default headerNavLinks;
