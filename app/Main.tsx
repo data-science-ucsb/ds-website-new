@@ -19,7 +19,6 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup"; 
 import Link from "@/components/Link"
 import headerNavLinks from "@/app/data/headerNavLinks"
-import TopGlassBanner from "@/components/TopGlassBanner";
 import Data4GoodModal from "@/components/Data4GoodModal";
 
 
@@ -64,17 +63,6 @@ export default function Home() {
         style={{ width: `${scrollProgress}%` }}
         className="fixed top-0 left-0 h-1 bg-blue-500 z-50"
       ></div>
-
-      <div className="top-0 left-0 right-0 z-40 pointer-events-auto">
-        <TopGlassBanner
-          href="https://tinyurl.com/DS-Board-26-27"
-          dateLabel="April 27"
-          message="Our board applications for 2026-2027 is now open! "
-          cta="Apply Here"
-          // optional: tweak margins/width from here
-          className="mt-3"
-        />
-      </div>
 
       
       <motion.div
