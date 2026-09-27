@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: "DS UCSB Club Tee",
     description:
       "Soft everyday club t-shirt for pickup at a general meeting.",
-    price: 18,
+    price: 15,
     image: "/images/25-26-tshirt.jpg",
     category: "merchandise",
     inventory: 150,
@@ -28,7 +28,7 @@ export const products: Product[] = [
     name: "Tee + Membership Bundle",
     description:
       "Bundle pricing for one club tee and the 2026 member pass.",
-    price: 34,
+    price: 35,
     image: "/images/homepage.png",
     category: "bundle",
     inventory: 120,
