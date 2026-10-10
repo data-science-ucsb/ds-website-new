@@ -7,14 +7,13 @@ export interface BoardMember {
 }
 
 // Display order: executive, technical development, professional development / industry
-// relations, communications / outreach / design, events, operations. Officers whose positions
-// have not been supplied remain at the end with the general Officer title.
+// relations, communications / outreach / design, events, operations.
 export const boardMembers: BoardMember[] = [
   {
     "name": "Nini Yen",
     "role": "President",
     "major": "Computer Science",
-    "imageUrl": "/images/board2026-27/nini-yen.jpg",
+    "imageUrl": "/images/board2026-27/nini-yen.png",
     "bio": "Hi everyone! I'm Nini, and I'm a fourth year computer science major. My main interests are technical management and data engineering. Outside of academics, I love dancing, playing piano/guitar, karaoking, playing video games, and Beli-ing. This year I'm really looking forward to giving back to the data science community, trying every restaurant in IV, and making lots of fun memories with the club!"
   },
   {
@@ -60,6 +59,13 @@ export const boardMembers: BoardMember[] = [
     "bio": "My name is Diego Linn, a computer science major going into his second year. I love to go read fantasy and sci-fi books, play videogames, go to the gym and go camping. My interests and experience in data science lie in signal processing, and control loops and i'm getting further into ML. Excited to work on projects and learn more about data science together this upcoming school year!"
   },
   {
+    "name": "Sungjin Kwon",
+    "role": "Director of Professional Development",
+    "major": "Statistics & Data Science and Economics & Accounting",
+    "imageUrl": "/images/board2026-27/sungjin-kwon.jpeg",
+    "bio": "Hi! My name is Sungjin Kwon, a junior studying Statistics & Data Science and Economics & Accounting. I enjoy reading, going to the gym, and singing. I’m looking forward to our big events like the Datathon and Project Showcase!"
+  },
+  {
     "name": "Caroline Liu",
     "role": "Director of Industry Relations",
     "major": "Communication and Statistics & Data Science",
@@ -75,7 +81,7 @@ export const boardMembers: BoardMember[] = [
   },
   {
     "name": "Emma Lin",
-    "role": "Outreach Intern",
+    "role": "Director of Communications",
     "major": "Statistics & Data Science and Psychological & Brain Sciences",
     "imageUrl": "/images/board2026-27/emma-lin.png",
     "bio": "Hi! I'm Emma, a second-year student double majoring in Statistics and Data Science and Psychological and Brain Sciences. I'm excited to meet and get to know all of our members this year. I’m also looking forward to seeing everyone learn, grow, and make the most of their experience in the club! For hobbies, I enjoy playing the piano, listening to music, playing video games, and also doing digital art."
@@ -103,17 +109,10 @@ export const boardMembers: BoardMember[] = [
   },
   {
     "name": "Ali Shahid",
-    "role": "Officer",
+    "role": "Director of Operations",
     "major": "Computer Science; minors in Statistics and Education",
     "imageUrl": "/images/board2026-27/ali-shahid.webp",
     "bio": "Ali, 4th year CS major with Stats and Education minors. Really into sports (football, soccer, basketball), music, and competitive Pokemon. Looking forward to this years sports seasons, teaching in SB Unified, and a fun year with data science club."
-  },
-  {
-    "name": "Sungjin Kwon",
-    "role": "Officer",
-    "major": "Statistics & Data Science and Economics & Accounting",
-    "imageUrl": "/images/board2026-27/sungjin-kwon.jpeg",
-    "bio": "Hi! My name is Sungjin Kwon, a junior studying Statistics & Data Science and Economics & Accounting. I enjoy reading, going to the gym, and singing. I’m looking forward to our big events like the Datathon and Project Showcase!"
   }
 ];
 
