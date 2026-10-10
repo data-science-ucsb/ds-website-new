@@ -13,7 +13,7 @@ export const boardMembers: BoardMember[] = [
     "name": "Nini Yen",
     "role": "President",
     "major": "Computer Science",
-    "imageUrl": "/images/board2026-27/nini-yen.png",
+    "imageUrl": "/images/board2026-27/nini-yen.jpg",
     "bio": "Hi everyone! I'm Nini, and I'm a fourth year computer science major. My main interests are technical management and data engineering. Outside of academics, I love dancing, playing piano/guitar, karaoking, playing video games, and Beli-ing. This year I'm really looking forward to giving back to the data science community, trying every restaurant in IV, and making lots of fun memories with the club!"
   },
   {
