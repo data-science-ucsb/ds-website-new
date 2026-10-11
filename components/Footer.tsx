@@ -1,11 +1,14 @@
 import Link from "./Link";
 import siteMetadata from "@/app/data/siteMetadata";
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
   return (
     <footer>
       <div className="mt-12 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4"></div>
+        <div className="mb-5">
+          <SocialLinks />
+        </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{`© ${new Date().getFullYear()}`}</div>
           <Link href="/">{siteMetadata.title}</Link>

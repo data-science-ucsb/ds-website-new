@@ -12,7 +12,7 @@ import SponsorsSection from "@/components/SponsorsSection";
 import events from "@/app/data/homepage-events";
 // import galleryImages from "@/components/HomepageGallery"; 
 import GetInvolvedSection from "@/components/GetInvolvedSection";
-import WhereWeWorkSection from "@/components/WhereWeWorkSection";
+import SocialLinks from "@/components/SocialLinks";
 import AlternatingSection from "@/components/AlternatingSection"; 
 import TitleAnimation from "@/components/TitleAnimation";
 import { useInView } from "react-intersection-observer"; 
@@ -20,6 +20,7 @@ import CountUp from "react-countup";
 import Link from "@/components/Link"
 import headerNavLinks from "@/app/data/headerNavLinks"
 import Data4GoodModal from "@/components/Data4GoodModal";
+import TopGlassBanner from "@/components/TopGlassBanner";
 
 
 
@@ -65,6 +66,13 @@ export default function Home() {
       ></div>
 
       
+      <TopGlassBanner
+        href="https://tinyurl.com/ds-career-fair-26-27"
+        message="Sign up for our Fall 2026 Career Fair!"
+        cta="Sign up"
+        className="mt-3"
+      />
+
       <motion.div
         className="flex flex-col lg:flex-row items-center w-full h-screen pt-2"
         initial={{ opacity: 0, y: 50 }}
@@ -107,6 +115,9 @@ export default function Home() {
             >
               Learn More
             </button>
+          </div>
+          <div className="mt-5">
+            <SocialLinks />
           </div>
         </div>
         <motion.div
@@ -220,7 +231,6 @@ export default function Home() {
      
       <GetInvolvedSection />
 
-      <WhereWeWorkSection />
 
       
       <SponsorsSection />

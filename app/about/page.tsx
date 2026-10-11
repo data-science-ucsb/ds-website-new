@@ -7,7 +7,6 @@ export default function AboutPage() {
       <div className="mx-auto mb-12 max-w-2xl text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">2026–27 Board</p>
         <h1 className="text-3xl font-bold sm:text-4xl">Meet the Data Science UCSB Officers</h1>
-        <p className="mt-4 text-gray-600">Get to know the people behind our community. Select an officer to read their bio.</p>
       </div>
       <div className="flex flex-wrap justify-center gap-8">
         {boardMembers.map((member) => (
