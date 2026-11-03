@@ -59,6 +59,13 @@ export const boardMembers: BoardMember[] = [
     "bio": "My name is Diego Linn, a computer science major going into his second year. I love to go read fantasy and sci-fi books, play videogames, go to the gym and go camping. My interests and experience in data science lie in signal processing, and control loops and i'm getting further into ML. Excited to work on projects and learn more about data science together this upcoming school year!"
   },
   {
+    "name": "John Yang",
+    "role": "Director of Web Development",
+    "major": "Computer Science",
+    "imageUrl": "/images/board2026-27/john-yang.jpg",
+    "bio": "Hey I'm John Yang, a second year CS major at UCSB! Outside of coding, I like running and rock climbing 🙂"
+  },
+  {
     "name": "Sungjin Kwon",
     "role": "Director of Professional Development",
     "major": "Statistics & Data Science and Economics & Accounting",
