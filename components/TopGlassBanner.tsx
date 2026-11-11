@@ -11,45 +11,25 @@ type Props = {
 
 export default function TopGlassBanner({
   href,
-  dateLabel = "Jan 08",
   message,
   cta = "Learn more",
   className = "",
 }: Props) {
   return (
-    <div className={`flex justify-center ${className}`}>
-      <div
-        className={[
-          // pill container
-          "group inline-flex max-w-full flex-wrap items-center justify-center gap-3 sm:gap-4",
-          "backdrop-blur-xl",
-          "bg-gradient-to-r from-blue-500/10 to-blue-400/10",
-          "border border-blue-400/20",
-          "rounded-2xl sm:rounded-full px-5 sm:px-14 py-2.5 text-center",
-          "shadow-lg shadow-blue-500/20",
-          "transition-all duration-300 hover:bg-blue-400/20",
-          "text-sm",
-        ].join(" ")}
-      >
-        {/* center message */}
-        <span className="font-medium text-gray-600">{message}</span>
-
-        {/* right CTA */}
-        <Link
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-500 transition-colors"
-        >
-          {cta}
-          <span
-            aria-hidden="true"
-            className="group-hover:translate-x-0.5 transition-transform"
-          >
-            →
-          </span>
-        </Link>
-      </div>
-    </div>
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group inline-flex max-w-full flex-wrap items-center gap-3 rounded-full border border-paper-line bg-white/70 py-1.5 pl-2 pr-4 text-sm transition hover:border-navy/30 hover:bg-white ${className}`}
+    >
+      <span aria-hidden="true" className="ml-1.5 h-2 w-2 rounded-full bg-gold" />
+      <span className="text-ink-muted">{message}</span>
+      <span className="inline-flex items-center gap-1 font-medium text-navy">
+        {cta}
+        <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
+          →
+        </span>
+      </span>
+    </Link>
   );
 }

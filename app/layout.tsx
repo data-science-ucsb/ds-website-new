@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import SectionContainer from "@/components/SectionContainer";
-import { inter } from "./fonts";
+import { inter, newsreader, jetbrainsMono } from "./fonts";
 import { CartProvider } from "@/components/CartProvider";
 
 export const metadata: Metadata = {
@@ -17,12 +17,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang={siteMetadata.language}
-      className={inter.className}
+      className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="">
+      <body>
         <CartProvider>
-          <div className="bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
+          <div className="bg-paper">
             <SectionContainer>
               <div className="flex flex-col justify-between min-h-screen">
                 <Header />
