@@ -41,9 +41,8 @@ export default function Home() {
         <div className="flex-1">
           <div className="enter">
             <TopGlassBanner
-              href="https://tinyurl.com/ds-career-fair-26-27"
-              message="Sign up for our Fall 2026 Career Fair!"
-              cta="Sign up"
+              label="General Meeting"
+              messages={["Tuesdays · 6 PM · TD-W 1701", "Open to all!"]}
             />
           </div>
 
