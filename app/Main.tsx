@@ -67,9 +67,12 @@ export default function Home() {
 
       
       <TopGlassBanner
-        href="https://tinyurl.com/ds-career-fair-26-27"
-        message="Sign up for our Fall 2026 Career Fair!"
-        cta="Sign up"
+        label="General Meeting"
+        messages={[
+          "Every Tuesday at 6 PM",
+          "Open to everyone, all majors",
+          "No sign-up needed, just show up",
+        ]}
         className="mt-3"
       />
 
