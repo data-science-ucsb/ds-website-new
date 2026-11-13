@@ -24,13 +24,13 @@ const MobileNav = () => {
       <button
         aria-label="Toggle Menu"
         onClick={onToggleNav}
-        className="sm:hidden"
+        className="mr-1 rounded-full p-1.5 transition hover:bg-ink/5 sm:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="h-8 w-8 text-gray-900"
+          className="h-7 w-7 text-ink"
         >
           <path
             fillRule="evenodd"
@@ -40,7 +40,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-white opacity-95 duration-300 ease-in-out ${
+        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-paper duration-300 ease-in-out ${
           navShow ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -54,7 +54,7 @@ const MobileNav = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-gray-900 "
+              className="text-ink"
             >
               <path
                 fillRule="evenodd"
@@ -66,10 +66,10 @@ const MobileNav = () => {
         </div>
         <nav className="fixed mt-8 h-full">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
+            <div key={link.title} className="px-10 py-3">
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 "
+                className="font-serif text-4xl font-light tracking-display text-ink transition hover:text-navy"
                 onClick={onToggleNav}
               >
                 {link.title}

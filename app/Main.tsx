@@ -1,239 +1,130 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-// import Slider from "react-slick"; 
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css"; 
-import LogoAnimation from "@/components/LogoAnimation";
-import HomepageEventsSection from "@/components/HomepageEventsSection";
 import SponsorsSection from "@/components/SponsorsSection";
-import events from "@/app/data/homepage-events";
-// import galleryImages from "@/components/HomepageGallery"; 
 import GetInvolvedSection from "@/components/GetInvolvedSection";
 import SocialLinks from "@/components/SocialLinks";
-import AlternatingSection from "@/components/AlternatingSection"; 
+import AlternatingSection from "@/components/AlternatingSection";
 import TitleAnimation from "@/components/TitleAnimation";
-import { useInView } from "react-intersection-observer"; 
-import CountUp from "react-countup"; 
-import Link from "@/components/Link"
-import headerNavLinks from "@/app/data/headerNavLinks"
-import Data4GoodModal from "@/components/Data4GoodModal";
 import TopGlassBanner from "@/components/TopGlassBanner";
-
-
-
+import HeroBoard from "@/components/hero-boards/HeroBoard";
+import PillButton from "@/components/PillButton";
+// import Data4GoodModal from "@/components/Data4GoodModal";
 
 export default function Home() {
-  const [showAnimation, setShowAnimation] = useState(true);
-  const [scrollProgress, setScrollProgress] = useState(0); 
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowAnimation(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (scrollTop / scrollHeight) * 100;
-      setScrollProgress(progress);
+      setScrollProgress(scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  
-
-  if (showAnimation) {
-    return <LogoAnimation />;
-  }
 
   return (
     <>
       {/* Data4Good Modal */}
       {/* <Data4GoodModal /> Commented out but can be brought back next year - April 2026 */}
-      
+
       <div
         style={{ width: `${scrollProgress}%` }}
-        className="fixed top-0 left-0 h-1 bg-blue-500 z-50"
-      ></div>
-
-      
-      <TopGlassBanner
-        href="https://tinyurl.com/ds-career-fair-26-27"
-        message="Sign up for our Fall 2026 Career Fair!"
-        cta="Sign up"
-        className="mt-3"
+        className="fixed left-0 top-0 z-50 h-[3px] bg-gold"
       />
 
-      <motion.div
-        className="flex flex-col lg:flex-row items-center w-full h-screen pt-2"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      {/* Hero */}
+      <section className="relative flex min-h-[calc(100svh-5.5rem)] items-center py-12">
+        <div className="flex w-full flex-col gap-12 lg:flex-row lg:items-stretch lg:gap-14">
         <div className="flex-1">
-          <motion.h1
-            className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Welcome to Data Science Club @ UCSB!
-          </motion.h1>
-          <motion.p
-            className="text-lg leading-7 text-gray-500 mt-2"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <TitleAnimation />
-          </motion.p>
-          <div className="mt-6 flex space-x-4">
-            <Link
-              href="https://forms.gle/cBc4iRwiSMDfjfpf9"
-              className="relative overflow-hidden font-medium text-white py-2 px-4 rounded-full bg-blue-500 group"
-            >
-              <span className="absolute inset-y-0 left-0 w-0 bg-blue-700 rounded-full transition-all duration-300 ease-out group-hover:w-full" />
-              <span className="relative z-10">Join Us!</span>
-            </Link>
+          <div className="enter">
+            <TopGlassBanner
+              label="General Meeting"
+              messages={["Tuesdays · 6 PM · TD-W 1701", "Open to all!"]}
+            />
+          </div>
 
-            <button
+          <h1 className="enter enter-1 mt-8 font-serif text-[clamp(2.75rem,6.4vw,5rem)] font-light leading-[0.98] tracking-display text-ink">
+            Welcome to Data Science Club{" "}
+            <span className="text-navy">@&nbsp;UCSB!</span>
+          </h1>
+
+          <p className="enter enter-2 mt-6 min-h-[3.5rem] max-w-md text-lg leading-7 text-ink-muted">
+            <TitleAnimation />
+          </p>
+
+          <div className="enter enter-3 mt-8 flex flex-wrap gap-3">
+            <PillButton href="https://forms.gle/cBc4iRwiSMDfjfpf9">Join Us!</PillButton>
+            <PillButton
+              variant="outline"
               onClick={() => {
-                const missionSection = document.querySelector("#mission-section");
-                missionSection?.scrollIntoView({ behavior: "smooth", block: "center" });
-                
+                document
+                  .querySelector("#mission-section")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="font-medium text-gray-700 py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 transition-all duration-300"
             >
               Learn More
-            </button>
+            </PillButton>
           </div>
-          <div className="mt-5">
+
+          <div className="enter enter-4 mt-8 -ml-3">
             <SocialLinks />
           </div>
         </div>
-        <motion.div
-          className="w-full lg:w-1/2 flex items-center justify-center mt-4 lg:mt-0"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/images/homepg.png"
-            alt="Homepage Image"
-            width={400}
-            height={400}
-          />
-        </motion.div>
-      </motion.div>
 
-      {/* Scrollable Content Section */}
-      {/* Gallery Section (Commented Out) */}
-      {/*
-      <div className="container mx-auto my-8 flex flex-col lg:flex-row items-center">
-        <div className="w-full lg:w-1/2 pr-4">
-          <h2 className="text-2xl font-bold text-center mb-6">Gallery</h2>
-          <Slider
-            dots={true}
-            infinite={true}
-            speed={500}
-            slidesToShow={1}
-            slidesToScroll={1}
-            autoplay={true}
-            autoplaySpeed={3000}
-            pauseOnHover={true}
-            pauseOnFocus={false}
-            className="rounded-lg shadow-lg"
-          >
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="relative group overflow-hidden rounded-lg flex items-center justify-center bg-gray-100"
-                style={{ height: "500px" }} // Set a fixed height for the container
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={800}
-                  height={500}
-                  className="rounded-lg object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <figcaption className="absolute inset-x-0 bottom-0 text-white text-center text-sm font-medium p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {image.caption}
-                </figcaption>
-              </div>
-            ))}
-          </Slider>
+        {/* absolutely filled on lg so the text column alone sets the height */}
+        <div className="enter enter-2 relative w-full lg:w-[44%]">
+          <div className="lg:absolute lg:inset-0">
+            <HeroBoard />
+          </div>
         </div>
-      </div>
-      */}
+        </div>
+      </section>
 
-      <div
+      {/* Mission: full-bleed navy band */}
+      <section
         id="mission-section"
-        className="
-          relative 
-          w-screen left-1/2 transform -translate-x-1/2 
-          overflow-hidden 
-          my-16 
-          min-h-[75vh] 
-          flex items-center justify-center
-        "
+        className="bleed relative flex min-h-[90svh] scroll-mt-0 items-center overflow-hidden bg-black"
       >
         <video
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 h-full w-full object-cover"
           src="https://archive.org/download/video1_20250717/video1.mp4"
           autoPlay
           loop
           muted
           playsInline
         />
+        <div aria-hidden="true" className="absolute inset-0 bg-black/55" />
 
-        
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-0" />
-
-       
-        <div className="relative z-10 container mx-auto flex flex-col items-center text-center px-6">
-          <motion.div
-            className="space-y-4"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="group">
-              <h1 className="text-3xl md:text-4xl lg:text-3xl font-extrabold leading-tight text-white">
-                Our Mission
-              </h1>
-              <div className="w-20 h-1 bg-blue-500 mx-auto mt-2 origin-left scale-x-100 group-hover:scale-x-0 transition-transform duration-300"></div>
-            </div>
-            <p className="text-lg md:text-xl lg:text-xl leading-relaxed text-white max-w-3xl mx-auto">
-              We provide Gauchos with the resources and community to learn, share,
-              and create in the realm of data science. Our vision is to be the
-              platform through which companies and faculty researchers seek the
-              best data science talent UCSB has to offer, as well as one that
-              empowers students looking to earn this distinction.
-            </p>
-          </motion.div>
+        <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-24 text-center">
+          <span aria-hidden="true" className="mb-10 flex items-center gap-1">
+            <span className="h-3.5 w-3.5 rounded-full border border-paper" />
+            <span className="h-3.5 w-3.5 rounded-full bg-gold" />
+          </span>
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-light leading-[1.05] tracking-display text-paper">
+            Our Mission
+          </h2>
+          <p className="mt-8 max-w-3xl font-serif text-[clamp(1.25rem,2.2vw,1.65rem)] font-light leading-snug text-paper">
+            We provide Gauchos with the resources and community to learn, share,
+            and create in the realm of data science.{" "}
+            <span className="text-paper/70">
+              Our vision is to be the platform through which companies and
+              faculty researchers seek the best data science talent UCSB has to
+              offer, as well as one that empowers students looking to earn this
+              distinction.
+            </span>
+          </p>
         </div>
-      </div>
+      </section>
 
-      
-      <AlternatingSection />      
+      <AlternatingSection />
 
-     
       <GetInvolvedSection />
 
-
-      
       <SponsorsSection />
     </>
   );
 }
+

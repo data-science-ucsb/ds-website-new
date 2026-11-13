@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PillButton from "./PillButton";
 
 const AlternatingSection = () => {
   const rows = [
@@ -6,72 +7,69 @@ const AlternatingSection = () => {
       title: "Who are we?",
       text: "We are a vibrant community dedicated to inspiring and guiding passionate students in the world of data science, technology, and innovation. Our mission is to empower Gauchos to explore, learn, and excel in their journey toward impactful careers.",
       imageSrc: "/images/alumniconnect25.jpeg",
-      imageAlt: "Image 1",
+      imageAlt: "Alumni Connect 2025",
       reverse: false,
-      caption: "Alumni Connnect 2025"
+      caption: "Alumni Connnect 2025",
     },
     {
       title: "What do we do?",
       text: "We provide students with the resources, mentorship, and opportunities to excel in data science and technology careers. From hands-on workshops, industry events, career fairs, to datathons, we aim to foster growth, collaboration, and innovation.",
       imageSrc: "/images/pres1.jpg",
-      imageAlt: "Image 2",
+      imageAlt: "Project Showcase 2025",
       reverse: true,
-      caption: "Project Showcase 2025"
+      caption: "Project Showcase 2025",
     },
   ];
 
   return (
-    <div className="container mx-auto my-8 space-y-12">
-      {rows.map((row, index) => (
+    <div className="space-y-24 py-28 lg:space-y-32 lg:py-36">
+      {rows.map((row) => (
         <div
-          key={index}
-          className={`flex flex-col lg:flex-row items-center lg:items-start gap-8 ${
+          key={row.title}
+          className={`flex flex-col items-center gap-10 lg:flex-row lg:gap-16 ${
             row.reverse ? "lg:flex-row-reverse" : ""
           }`}
         >
-          <div className="w-full lg:w-1/2 px-4">
-            <div className="relative w-full overflow-hidden rounded-lg shadow-lg group h-0 pb-[60%]">
+          <figure className="group relative w-full overflow-hidden rounded-[1.75rem] bg-paper-card lg:w-[55%]">
+            <div className="relative aspect-[5/3.4]">
               <Image
                 src={row.imageSrc}
                 alt={row.imageAlt}
                 fill
-                className="object-cover transform transition-transform duration-300 group-hover:scale-105"
+                sizes="(min-width: 1024px) 55vw, 100vw"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
-
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-gray-800 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-lg"></div>
-
-              <figcaption className="absolute inset-x-0 bottom-0 text-white text-center text-sm font-medium p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {row.caption}
-              </figcaption>
             </div>
-          </div>
+            <figcaption className="absolute bottom-3 left-3 rounded-full bg-paper/90 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.12em] text-ink-muted opacity-0 backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
+              {row.caption}
+            </figcaption>
+          </figure>
 
-          <div className="w-full lg:w-1/2 px-4 text-center lg:text-left">
-            <div className="group">
-              <h2 className="text-xl font-bold text-gray-900">{row.title}</h2>
-              <div className="w-20 h-1 bg-blue-500 mx-auto lg:mx-0 mt-2 origin-left scale-x-100 group-hover:scale-x-0 transition-transform duration-300"></div>
+          <div className="w-full lg:w-[45%]">
+            <h2 className="font-serif text-[clamp(2.25rem,4.4vw,3.5rem)] font-light leading-[1.02] tracking-display">
+              {row.title}
+            </h2>
+            <p className="mt-5 max-w-lg text-base leading-7 text-ink-muted">{row.text}</p>
+
+            <div className="mt-8">
+              {row.title === "Who are we?" && (
+                <PillButton variant="outline" href="/about">
+                  Meet the team
+                </PillButton>
+              )}
+              {row.title === "What do we do?" && (
+                <PillButton
+                  variant="outline"
+                  onClick={() =>
+                    document
+                      .querySelector("#four-cards-section")
+                      ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Learn More
+                </PillButton>
+              )}
             </div>
-            <p className="text-gray-500 mt-2">{row.text}</p>
-
-            {row.title === "Who are we?" && (
-              <button
-                onClick={() => window.location.href = "/about"}
-                className="mt-4 relative overflow-hidden font-medium text-gray-700 py-2 px-4 rounded-full border border-blue-300 hover:text-white transition-all duration-300 group"
-              >
-                <span className="absolute inset-0 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                <span className="relative z-10">Meet the team</span>
-              </button>
-            )}
-
-            {row.title === "What do we do?" && (
-              <button
-                onClick={() => document.querySelector("#four-cards-section")?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" })}
-                className="mt-4 relative overflow-hidden font-medium text-gray-700 py-2 px-4 rounded-full border border-blue-300 hover:text-white transition-all duration-300 group"
-              >
-                <span className="absolute inset-0 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                <span className="relative z-10">Learn More</span>
-              </button>
-            )}
           </div>
         </div>
       ))}
