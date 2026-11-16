@@ -11,6 +11,10 @@ const faqs = [
       "No, the club is open to all majors! We welcome all who are interested in data science!",
   },
   {
+    question: "Do I have to be a member to attend the General Meetings (GMs)?",
+    answer: "No, our GMs are open to everyone! Feel free to stop by.",
+  },
+  {
     question: "Are there requirements and strict settings within the club?",
     answer:
       "Not in the slightest! This is a student-run club designed to groom and polish your data science skills, but it is no way a stressful club to be a part of. Members and officers are friendly and compatible people to work with and form friendships with. You will get what you put into this club!",
