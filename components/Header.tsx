@@ -9,62 +9,45 @@ import Dropdown from "./Dropdown";
 import { aboutOptions, resourceOptions } from "@/app/data/dropdown";
 
 const Header = () => {
+  const store = headerNavLinks.find((l) => l.title === "Store");
+  const register = headerNavLinks.find((l) => l.title === "Register");
 
   return (
-    <header className="flex items-center justify-between py-4">
-      <div>
-        <Link href="/" aria-label={siteMetadata.headerTitle}>
-          <div className="flex items-center justify-between">
-            <div className="">
-              <Image
-                src={"/images/datasciencelogotransparent.png"}
-                alt="Data Science Logo" 
-                width={250} 
-                height={250} 
-              />
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex items-center gap-2 leading-5 sm:gap-1">
-        {/* Data4Good Glowing Button */}
-          {/* <a
-            href="https://datathon.datascienceucsb.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center px-4 py-2 font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-full relative overflow-hidden group animate-pulse-glow hover:scale-105 transition-transform"
+    <header className="sticky top-3 z-40 mt-3 flex items-center justify-between py-2 pl-4 pr-2">
+      {/* blur lives on its own layer so the fixed mobile menu isn't trapped by backdrop-filter */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 rounded-2xl border border-paper-line/70 bg-paper/80 backdrop-blur-xl" />
+      <Link href="/" aria-label={siteMetadata.headerTitle} className="shrink-0">
+        <Image
+          src={"/images/datasciencelogotransparent.png"}
+          alt="Data Science Logo"
+          width={200}
+          height={45}
+          className="h-auto w-[170px] sm:w-[200px]"
+          priority
+        />
+      </Link>
+      <div className="flex items-center gap-1">
+        <Dropdown primaryName={resourceOptions.primaryName} pages={resourceOptions.pages} />
+        <Dropdown primaryName={aboutOptions.primaryName} pages={aboutOptions.pages} />
+
+        {store && (
+          <Link
+            href={store.href}
+            className="hidden rounded-full px-4 py-2 text-sm font-medium text-ink transition hover:bg-ink/5 sm:block"
           >
-            <span className="relative z-10">Data4Good</span>
-          </a> */}
-          <Dropdown primaryName={resourceOptions.primaryName} pages={resourceOptions.pages}/>
-          <Dropdown primaryName={aboutOptions.primaryName} pages={aboutOptions.pages} />
+            Store
+          </Link>
+        )}
 
-          {headerNavLinks
-          .filter((link) => link.title === "Store")
-          .map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="group relative ml-3 mr-8 hidden overflow-hidden rounded-full border border-blue-500 px-4 py-2 font-medium text-blue-700 transition hover:text-white sm:block"
-            >
-              <span className="absolute inset-y-0 left-0 w-0 bg-blue-500 transition-all duration-300 ease-out group-hover:w-full" />
-              <span className="relative z-10">Store</span>
-            </Link>
-          ))}
-
-          {headerNavLinks
-          .filter((link) => link.title === "Register")
-          .map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="hidden sm:block relative overflow-hidden font-medium text-white py-2 px-4 rounded-full bg-blue-500 group"
-            >
-             
-              <span className="absolute inset-y-0 left-0 w-0 bg-blue-700 transition-all duration-300 ease-out group-hover:w-full" />
-              <span className="relative z-10">Join Us!</span>
-            </Link>
-          ))}
+        {register && (
+          <Link
+            href={register.href}
+            className="group ml-2 hidden items-center gap-3 rounded-full bg-navy py-2.5 pl-4 pr-3.5 text-sm font-medium text-paper transition hover:bg-navy-deep active:scale-[0.98] sm:inline-flex"
+          >
+            Join Us!
+            <span className="h-1.5 w-1.5 rounded-full bg-gold transition-transform group-hover:scale-[1.8]" />
+          </Link>
+        )}
         <MobileNav />
       </div>
     </header>

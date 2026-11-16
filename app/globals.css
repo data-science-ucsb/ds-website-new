@@ -2,12 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background: #F6F4EE;
+  /* full-bleed bands use 100vw, which includes the scrollbar */
+  overflow-x: clip;
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+  overflow-x: clip;
+}
+
 h1 {
-  @apply text-gray-900;
+  @apply text-ink;
 }
 
 h2 {
-    @apply text-gray-900;
+  @apply text-ink;
+}
+
+::selection {
+  background: #FCD20F;
+  color: #121C40;
+}
+
+/* full-bleed band inside the centered layout container */
+.bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* reflection-style dot pattern */
+.dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1.2px);
+  background-size: 14px 14px;
+}
+
+/* ASCII Galton (coin) board colours */
+.galton .gb-peg { color: rgba(21, 26, 45, 0.3); }
+.galton .gb-frame { color: rgba(21, 26, 45, 0.3); }
+.galton .gb-coin { color: #151A2D; font-weight: 700; }
+.galton .gb-flip { color: #273F87; font-weight: 700; }
+.galton .gb-stack { color: #151A2D; }
+.galton .gb-ghost { color: rgba(21, 26, 45, 0.3); }
+.galton .gb-label { color: rgba(21, 26, 45, 0.45); }
+
+/* ASCII dice board colours */
+.dice-board .db-die { color: #151A2D; }
+.dice-board .db-pip { color: #151A2D; font-weight: 700; }
+.dice-board .db-rolling { color: rgba(21, 26, 45, 0.35); }
+.dice-board .db-sum { color: #273F87; font-weight: 700; }
+.dice-board .db-token { color: #273F87; font-weight: 700; }
+.dice-board .db-stack { color: #151A2D; }
+.dice-board .db-ghost { color: rgba(21, 26, 45, 0.3); }
+.dice-board .db-frame { color: rgba(21, 26, 45, 0.3); }
+.dice-board .db-label { color: rgba(21, 26, 45, 0.45); }
+
+.blinking-cursor {
+  animation: blink 1s steps(1) infinite;
+  color: #273F87;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.enter { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.enter-1 { animation-delay: 0.08s; }
+.enter-2 { animation-delay: 0.16s; }
+.enter-3 { animation-delay: 0.24s; }
+.enter-4 { animation-delay: 0.32s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .enter { animation: none; }
 }
 
 .logo-animation-container {

@@ -1,5 +1,9 @@
-export default function SocialLinks() {
-  const linkClassName = "inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-blue-700 transition-colors hover:bg-blue-50 hover:text-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600";
+export default function SocialLinks({ dark = false }: { dark?: boolean }) {
+  const linkClassName = `inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+    dark
+      ? "text-paper/80 hover:bg-white/10 hover:text-paper focus-visible:outline-gold"
+      : "text-navy hover:bg-navy/5 hover:text-navy-deep focus-visible:outline-navy"
+  }`;
 
   return (
     <nav aria-label="Social media" className="flex flex-wrap items-center gap-2">
