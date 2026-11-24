@@ -31,23 +31,23 @@ function whenLabel(ev: CalendarEvent): string {
 
 function UpcomingEvent({ ev }: { ev: CalendarEvent }) {
   return (
-    <li className="flex gap-4 bg-white/80 rounded-lg shadow-sm p-4">
-      <div className="flex flex-col items-center justify-center w-16 shrink-0 rounded-md bg-blue-500 text-white py-2">
+    <li className="flex gap-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <div className="flex flex-col items-center justify-center w-16 shrink-0 rounded-xl bg-navy text-white py-2">
         <span className="text-xs font-semibold uppercase tracking-wide">{monthFmt.format(ev.start)}</span>
         <span className="text-2xl font-bold leading-none">{dayFmt.format(ev.start)}</span>
       </div>
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2">
-          <h3 className="text-lg font-bold text-gray-900">{ev.title}</h3>
+          <h3 className="text-lg font-semibold text-ink">{ev.title}</h3>
           {ev.recurring && (
-            <span className="text-xs font-semibold text-blue-700 bg-blue-100 rounded-full px-2 py-0.5">
+            <span className="text-xs font-semibold text-navy bg-navy-soft rounded-full px-2 py-0.5">
               Recurring
             </span>
           )}
         </div>
-        <p className="text-sm text-gray-600">{whenLabel(ev)}</p>
-        {ev.location && <p className="text-sm text-gray-600">📍 {ev.location}</p>}
-        {ev.description && <p className="text-sm text-gray-500 mt-1 whitespace-pre-line">{ev.description}</p>}
+        <p className="text-sm text-ink-muted">{whenLabel(ev)}</p>
+        {ev.location && <p className="text-sm text-ink-muted">📍 {ev.location}</p>}
+        {ev.description && <p className="text-sm text-ink-muted mt-1 whitespace-pre-line">{ev.description}</p>}
       </div>
     </li>
   );
@@ -58,11 +58,13 @@ export default async function Calendar() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-12">Calendar</h1>
+      <h1 className="mb-4 text-center text-4xl font-bold">Calendar</h1>
+      <p className="mb-12 text-center text-gray-600">
+        General meetings, workshops, and club events, all in one place.
+      </p>
 
       <section className="max-w-3xl mx-auto mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-3">Upcoming Events</h2>
-        <div className="w-12 h-1 bg-blue-500 mb-6"></div>
+        <h2 className="mb-6 text-2xl font-semibold">Upcoming Events</h2>
         {events.length > 0 ? (
           <ul className="flex flex-col gap-4">
             {events.map((ev) => (
@@ -70,13 +72,13 @@ export default async function Calendar() {
             ))}
           </ul>
         ) : (
-          <p className="text-gray-500">No upcoming events right now — check back soon!</p>
+          <p className="text-gray-600">No upcoming events right now — check back soon!</p>
         )}
         <a
           href={SUBSCRIBE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-6 text-blue-600 font-semibold hover:underline"
+          className="inline-block mt-6 font-medium text-navy hover:underline"
         >
           + Add this calendar to Google Calendar
         </a>
@@ -86,7 +88,7 @@ export default async function Calendar() {
         <iframe
           src={EMBED_URL}
           title="UCSB Data Science Club calendar"
-          className="w-full max-w-[800px] h-[600px] border-0 rounded-lg bg-white"
+          className="w-full max-w-[800px] h-[600px] rounded-2xl border border-gray-200 bg-white shadow-sm"
         ></iframe>
       </div>
     </div>
